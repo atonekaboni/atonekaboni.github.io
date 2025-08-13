@@ -1,27 +1,33 @@
 <!DOCTYPE html>
-<html lang="fa" dir="rtl">
+<html lang="en" dir="ltr">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Portfolio</title>
   <style>
     :root {
-      --bg: #0f172a;
-      --card: #111827;
-      --card-hover: #1f2937;
-      --text: #e5e7eb;
-      --muted: #9ca3af;
+      --bg: #ffffff;
+      --card: #f5f5f5;
+      --card-hover: #e0e0e0;
+      --text: #222222;
+      --muted: #555555;
       --accent: #22d3ee;
       --radius: 14px;
       --gap: 18px;
     }
     * { box-sizing: border-box; }
     body {
-      margin: 0; font-family: sans-serif; background: var(--bg); color: var(--text);
-      -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;
+      margin: 0; 
+      font-family: sans-serif; 
+      background: var(--bg); 
+      color: var(--text);
+      -webkit-font-smoothing: antialiased; 
+      -moz-osx-font-smoothing: grayscale;
     }
     .wrap {
-      max-width: 1100px; margin: 40px auto; padding: 0 16px;
+      max-width: 1100px; 
+      margin: 40px auto; 
+      padding: 0 16px;
     }
     header { margin-bottom: 22px; }
     header h1 { margin: 0 0 6px 0; font-size: 26px; }
@@ -32,51 +38,69 @@
       gap: var(--gap);
     }
     .card {
-      display: flex; flex-direction: column; justify-content: space-between;
-      background: var(--card); border: 1px solid #222; border-radius: var(--radius);
-      padding: 18px; text-decoration: none; color: var(--text);
+      display: flex; 
+      flex-direction: column; 
+      justify-content: space-between;
+      background: var(--card);
+      border: 1px solid #ccc;
+      border-radius: var(--radius);
+      padding: 18px; 
+      text-decoration: none; 
+      color: var(--text);
       transition: transform .15s ease, background .15s ease, border-color .15s ease;
       min-height: 140px;
     }
-    .card:hover { transform: translateY(-3px); background: var(--card-hover); border-color: #333; }
+    .card:hover { 
+      transform: translateY(-3px); 
+      background: var(--card-hover); 
+      border-color: #999;
+    }
     .card .title {
-      font-weight: 700; font-size: 16px; line-height: 1.4; margin: 0 0 8px 0;
+      font-weight: 700; 
+      font-size: 16px; 
+      line-height: 1.4; 
+      margin: 0 0 8px 0;
     }
     .card .desc {
-      margin: 0; color: var(--muted); font-size: 14px;
+      margin: 0; 
+      color: var(--muted); 
+      font-size: 14px;
     }
     .card .badge {
-      margin-top: 14px; font-size: 12px; display: inline-block; color: var(--accent);
+      margin-top: 14px; 
+      font-size: 12px; 
+      display: inline-block; 
+      color: var(--accent);
     }
-    /* Simple Icon CSS */
     .icon {
-      width: 22px; height: 22px; border-radius: 6px; background: linear-gradient(135deg,#22d3ee,#06b6d4);
-      display: inline-block; vertical-align: middle; margin-left: 8px;
+      width: 22px; 
+      height: 22px; 
+      border-radius: 6px; 
+      background: linear-gradient(135deg,#22d3ee,#06b6d4);
+      display: inline-block; 
+      vertical-align: middle; 
+      margin-right: 8px;
     }
   </style>
 </head>
 <body>
   <div class="wrap">
     <header>
-      <h1>Links</h1>
-      <p>Click on the links.</p>
+      <h1>Portfolio Links</h1>
+      <p>Click on a card to open the link.</p>
     </header>
-
     <div class="grid">
-      <!-- SAP Business One -->
       <a class="card" href="https://github.com/atonekaboni/SBO" target="_blank" rel="noopener noreferrer">
         <div>
-          <div class="title"><span class="icon"></span>Repository: SBO</div>
-          <p class="desc">Codes</p>
+          <div class="title"><span class="icon"></span>SAP Business One</div>
+          <p class="desc">SAP Business One Training Guides</p>
         </div>
         <span class="badge">GitHub</span>
       </a>
-
-      <!-- LinkedIn -->
       <a class="card" href="https://www.linkedin.com/in/tonekaboni" target="_blank" rel="noopener noreferrer">
         <div>
           <div class="title"><span class="icon"></span>LinkedIn Profile</div>
-          <p class="desc">Linkedin Profile</p>
+          <p class="desc">SAP Business One ERP Consultant | Data Analyst</p>
         </div>
         <span class="badge">LinkedIn</span>
       </a>
