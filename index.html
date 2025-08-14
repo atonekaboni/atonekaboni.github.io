@@ -1,111 +1,293 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Portfolio</title>
+<title>Amirhossein Tonekaboni - Portfolio</title>
 <style>
-  :root {
-    --bg: #ffffff;
-    --card: #f5f5f5;
-    --card-hover: #e0e0e0;
-    --text: #222222;
-    --muted: #555555;
-    --accent: #22d3ee;
-    --radius: 14px;
-    --gap: 18px;
-  }
-  * { box-sizing: border-box; }
-  body {
+  * {
     margin: 0;
-    font-family: sans-serif;
-    background: var(--bg);
-    color: var(--text);
+    padding: 0;
+    box-sizing: border-box;
   }
-  .wrap {
-    max-width: 1100px;
-    margin: 40px auto;
-    padding: 0 16px;
+
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+    color: #333;
+    line-height: 1.6;
+    min-height: 100vh;
   }
-  header { margin-bottom: 22px; }
-  header h1 { margin: 0 0 6px 0; font-size: 26px; }
-  header p { margin: 0; color: var(--muted); }
-  .grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-    gap: var(--gap);
+
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 20px;
   }
-  .card {
-    background: var(--card);
-    border: 1px solid #ccc;
-    border-radius: var(--radius);
-    text-decoration: none;
-    color: var(--text);
-    transition: transform .15s ease, background .15s ease, border-color .15s ease;
-    aspect-ratio: 1 / 1;
-    padding: 16px;
+
+  .header {
+    text-align: center;
+    margin-bottom: 60px;
+    color: white;
+  }
+
+  .header h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+  }
+
+  .header p {
+    font-size: 1.2rem;
+    opacity: 0.9;
+  }
+
+  .cards-grid {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    gap: 30px;
   }
+
+  .card {
+    position: relative;
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    overflow: hidden;
+    cursor: pointer;
+    width: 100%;
+  }
+
+  .card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    pointer-events: none;
+    border-radius: 16px;
+    transition: box-shadow 0.3s ease;
+  }
+
   .card:hover {
-    transform: translateY(-3px);
-    background: var(--card-hover);
-    border-color: #999;
+    transform: translateY(-8px);
+    box-shadow: 0 32px 64px rgba(0,0,0,0.15);
   }
-  .title {
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.4;
-    margin: 0 0 8px 0;
+
+  .card:hover::before {
+    box-shadow: inset 0 0 0 2px #3b82f6;
   }
-  .desc {
-    margin: 0;
-    color: var(--muted);
-    font-size: 14px;
+
+  .card-header {
+    padding: 30px 30px 20px;
+    background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+    color: white;
   }
-  .badge {
-    margin-top: 14px;
-    font-size: 12px;
+
+  .card-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 8px;
+  }
+
+  .card-subtitle {
+    opacity: 0.9;
+    font-size: 0.95rem;
+  }
+
+  .card-body {
+    padding: 30px;
+  }
+
+  .card-links {
+    list-style: none;
+  }
+
+  .card-links li {
+    margin-bottom: 12px;
+    position: relative;
+    z-index: 2;
+  }
+
+  .card-links a {
+    display: block;
+    padding: 12px 16px;
+    color: #555;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: all 0.2s ease;
+    font-weight: 500;
+    position: relative;
+  }
+
+  .card-links a::before {
+    content: '→';
+    margin-right: 10px;
+    opacity: 0;
+    transform: translateX(-10px);
+    transition: all 0.2s ease;
+  }
+
+  .card-links a:hover {
+    background: #dbeafe;
+    color: #1e3a8a;
+    transform: translateX(4px);
+  }
+
+  .card-links a:hover::before {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  .card-links .non-clickable {
+    display: block;
+    padding: 12px 16px;
+    color: #888;
+    border-radius: 8px;
+    background: #f8f9fa;
+    margin-bottom: 12px;
+    font-weight: 500;
+  }
+
+  .card-links .non-clickable::before {
+    content: '•';
+    margin-right: 10px;
+    color: #3b82f6;
+  }
+
+  .card-footer {
+    padding: 20px 30px 30px;
+    text-align: center;
+  }
+
+  .main-link-btn {
     display: inline-block;
-    color: var(--accent);
+    padding: 12px 24px;
+    background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: all 0.2s ease;
+    position: relative;
+    z-index: 2;
   }
-  .icon {
-    width: 22px;
-    height: 22px;
-    border-radius: 6px;
-    background: linear-gradient(135deg,#22d3ee,#06b6d4);
-    display: inline-block;
-    vertical-align: middle;
-    margin-right: 8px;
+
+  .main-link-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 16px rgba(59, 130, 246, 0.3);
+  }
+
+  @media (max-width: 768px) {
+    .header h1 {
+      font-size: 2.2rem;
+    }
+    
+    .container {
+      max-width: 100%;
+      padding: 20px 15px;
+    }
+    
+    .cards-grid {
+      gap: 20px;
+    }
+    
+    .card-header,
+    .card-body,
+    .card-footer {
+      padding: 20px;
+    }
+  }
+
+  .card[data-href] {
+    cursor: pointer;
   }
 </style>
 </head>
 <body>
-<div class="wrap">
-  <header>
+
+<div class="container">
+  <div class="header">
     <h1>Amirhossein Tonekaboni</h1>
-    <p>Portfolio</p>
-  </header>
-  <div class="grid">
-    <a class="card" href="https://www.linkedin.com/in/tonekaboni" target="_blank" rel="noopener noreferrer">
-      <div>
-        <div class="title"><span class="icon"></span>LinkedIn Profile</div>
-        <p class="desc">SAP Business One ERP Consultant<br>Developing Data Analyst</p>
+    <p>SAP Business One ERP Consultant & Data Analyst</p>
+  </div>
+
+  <div class="cards-grid">
+    <!-- SAP Business One Card - FIRST -->
+    <div class="card" data-href="https://github.com/atonekaboni/SBO/">
+      <div class="card-header">
+        <h3 class="card-title">SAP Business One</h3>
+        <p class="card-subtitle">Guides, examples, and resources</p>
       </div>
-    </a>
-    <a class="card" href="https://github.com/atonekaboni/SBO" target="_blank" rel="noopener noreferrer">
-      <div>
-        <div class="title"><span class="icon"></span>SAP Business One</div>
-        <p class="desc">SAP Business One Training Guides</p>
+      <div class="card-body">
+        <ul class="card-links">
+          <li><a href="https://www.linkedin.com/posts/tonekaboni_sap-business-one-available-to-promise-atp-activity-7330141250928508928-e81i/?utm_source=share" target="_blank" onclick="event.stopPropagation()">Advanced Available-to-Promise (ATP)</a></li>
+          <li><a href="https://www.linkedin.com/posts/tonekaboni_sap-business-one-recent-sales-items-activity-7332673836133281795-L2_k?utm_source=share" target="_blank" onclick="event.stopPropagation()">How to use Formatted Search in SAP Business One</a></li>
+          <li><a href="https://www.linkedin.com/pulse/supercharge-your-view-connected-business-partners-tonekaboni-wayse" target="_blank" onclick="event.stopPropagation()">Supercharge your view of Connected Business Partners</a></li>
+          <li><a href="https://www.linkedin.com/posts/tonekaboni_automating-sap-business-one-with-n8n-activity-7338469577615421440-7kD7?utm_source=share&utm_medium=member_desktop" target="_blank" onclick="event.stopPropagation()">Revolutionizing Sales with SAP Business One, n8n, and AI</a></li>
+          <li><a href="https://www.linkedin.com/posts/tonekaboni_sap-business-one-custom-sales-blocklist-activity-7355487934503882753-VPCk?utm_source=share&utm_medium=member_desktop" target="_blank" onclick="event.stopPropagation()">Building a Custom Sales Blocklist in SAP Business One</a></li>
+        </ul>
       </div>
-    </a>
-    <a class="card" href="https://www.linkedin.com/in/tonekaboni/details/certifications/" target="_blank" rel="noopener noreferrer">
-      <div>
-        <div class="title"><span class="icon"></span>Licenses & certifications</div>
+      <div class="card-footer">
+        <span class="main-link-btn">Open GitHub Repository</span>
       </div>
-    </a>
+    </div>
+
+    <!-- Training Guides Card - SECOND -->
+    <div class="card" data-href="https://github.com/atonekaboni/SBO/">
+      <div class="card-header">
+        <h3 class="card-title">Training Guides</h3>
+        <p class="card-subtitle">Other training guides and posts</p>
+      </div>
+      <div class="card-body">
+        <ul class="card-links">
+          <li><a href="https://www.linkedin.com/posts/tonekaboni_leveraging-pcf-framework-for-successful-erp-activity-7350879466652418048-3j1-/?utm_source=share" target="_blank" onclick="event.stopPropagation()">PCF framework for successful ERP Implementation</a></li>
+          <li><a href="https://www.linkedin.com/posts/tonekaboni_month-over-month-calculations-activity-7353005724702015490-_AOW/?utm_source=share" target="_blank" onclick="event.stopPropagation()">Month-over-Month Calculations</a></li>
+          <li><a href="https://www.linkedin.com/posts/tonekaboni_datascience-python-eda-activity-7356283479581483009-yizk?utm_source=share&utm_medium=member_desktop" target="_blank" onclick="event.stopPropagation()">Data Science in Python: Data Prep & EDA</a></li>
+          <li><a href="https://www.linkedin.com/posts/tonekaboni_python-pandas-cheat-sheet-activity-7359636721497452546-bJ6K?utm_source=share&utm_medium=member_desktop" target="_blank" onclick="event.stopPropagation()">Python Pandas Cheat Sheet</a></li>
+        </ul>
+      </div>
+      <div class="card-footer">
+        <span class="main-link-btn">Browse All Guides</span>
+      </div>
+    </div>
+
+    <!-- LinkedIn Card - THIRD -->
+    <div class="card" data-href="https://www.linkedin.com/in/tonekaboni">
+      <div class="card-header">
+        <h3 class="card-title">LinkedIn Profile</h3>
+        <p class="card-subtitle">Professional network & connections</p>
+      </div>
+      <div class="card-body">
+        <ul class="card-links">
+          <li><a href="https://www.linkedin.com/in/tonekaboni/details/certifications/" target="_blank" onclick="event.stopPropagation()">View Certifications</a></li>
+          <li><a href="https://www.linkedin.com/in/tonekaboni/recent-activity/all/" target="_blank" onclick="event.stopPropagation()">Posts and Articles</a></li>
+        </ul>
+      </div>
+      <div class="card-footer">
+        <span class="main-link-btn">Visit LinkedIn Profile</span>
+      </div>
+    </div>
   </div>
 </div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const cards = document.querySelectorAll('.card[data-href]');
+  
+  cards.forEach(card => {
+    card.addEventListener('click', function(e) {
+      if (e.target === this || e.target.closest('.card-header, .card-footer, .non-clickable')) {
+        window.open(this.dataset.href, '_blank');
+      }
+    });
+  });
+});
+</script>
+
 </body>
 </html>
