@@ -75,6 +75,12 @@
       0 25px 50px -12px rgba(0, 0, 0, 0.15),
       0 0 0 1px rgba(59, 130, 246, 0.1);
   }
+  
+  /* Training card should not be clickable but still have hover effect */
+  .training-card {
+    cursor: default;
+  }
+  
   .card-header {
     padding: 28px 28px 20px;
     background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
@@ -165,6 +171,7 @@
     color: #3b82f6;
     transform: translateX(4px);
   }
+  
   .card-footer {
     padding: 20px 28px 28px;
     text-align: center;
@@ -225,13 +232,6 @@
   /* Special styling for Training card */
   .training-card .card-header {
     background: linear-gradient(135deg, #059669 0%, #047857 100%);
-  }
-  .training-card .main-link-btn {
-    background: linear-gradient(135deg, #059669 0%, #047857 100%);
-  }
-  .training-card .main-link-btn:hover {
-    background: linear-gradient(135deg, #047857 0%, #065f46 100%);
-    box-shadow: 0 12px 24px rgba(5, 150, 105, 0.4);
   }
   @media (max-width: 768px) {
     .container {
@@ -328,22 +328,19 @@
         <span class="main-link-btn">Open GitHub Repository</span>
       </div>
     </div>
-    <!-- Training Guides Card -->
-    <div class="card training-card" data-href="https://docs.google.com/document/d/1tYa13Weq7TWbepfCfp1Qp593dGyYOlRxucDcDjTm-ZY/edit?tab=t.0#heading=h.bbeiw1qu0olx">
+    <!-- Training Guides Card - NO MAIN LINK, NO FOOTER, BUT BULLET LINKS WORK -->
+    <div class="card training-card">
       <div class="card-header">
         <h3 class="card-title">Training Guides</h3>
         <p class="card-subtitle">Other Posts and Training Guides</p>
       </div>
       <div class="card-body">
         <ul class="card-links">
-          <li><a href="https://www.linkedin.com/posts/tonekaboni_leveraging-pcf-framework-for-successful-erp-activity-7350879466652418048-3j1-/?utm_source=share" target="_blank" onclick="event.stopPropagation()">PCF framework for successful ERP Implementation</a></li>
-          <li><a href="https://www.linkedin.com/posts/tonekaboni_month-over-month-calculations-activity-7353005724702015490-_AOW/?utm_source=share" target="_blank" onclick="event.stopPropagation()">Month-over-Month Calculations</a></li>
-          <li><a href="https://www.linkedin.com/posts/tonekaboni_datascience-python-eda-activity-7356283479581483009-yizk?utm_source=share&utm_medium=member_desktop" target="_blank" onclick="event.stopPropagation()">Data Science in Python: Data Prep & EDA</a></li>
-          <li><a href="https://www.linkedin.com/posts/tonekaboni_python-pandas-cheat-sheet-activity-7359636721497452546-bJ6K?utm_source=share&utm_medium=member_desktop" target="_blank" onclick="event.stopPropagation()">Python Pandas Cheat Sheet</a></li>
+          <li><a href="https://www.linkedin.com/posts/tonekaboni_leveraging-pcf-framework-for-successful-erp-activity-7350879466652418048-3j1-/?utm_source=share" target="_blank">PCF framework for successful ERP Implementation</a></li>
+          <li><a href="https://www.linkedin.com/posts/tonekaboni_month-over-month-calculations-activity-7353005724702015490-_AOW/?utm_source=share" target="_blank">Month-over-Month Calculations</a></li>
+          <li><a href="https://www.linkedin.com/posts/tonekaboni_datascience-python-eda-activity-7356283479581483009-yizk?utm_source=share&utm_medium=member_desktop" target="_blank">Data Science in Python: Data Prep & EDA</a></li>
+          <li><a href="https://www.linkedin.com/posts/tonekaboni_python-pandas-cheat-sheet-activity-7359636721497452546-bJ6K?utm_source=share&utm_medium=member_desktop" target="_blank">Python Pandas Cheat Sheet</a></li>
         </ul>
-      </div>
-      <div class="card-footer">
-        <span class="main-link-btn">Browse All Guides</span>
       </div>
     </div>
   </div>
