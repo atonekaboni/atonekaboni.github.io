@@ -1,113 +1,111 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Portfolio</title>
-  <style>
-    :root {
-      --bg: #ffffff;
-      --card: #f5f5f5;
-      --card-hover: #e0e0e0;
-      --text: #222222;
-      --muted: #555555;
-      --accent: #22d3ee;
-      --radius: 14px;
-      --gap: 18px;
-    }
-    * { box-sizing: border-box; }
-    body {
-      margin: 0; 
-      font-family: sans-serif; 
-      background: var(--bg); 
-      color: var(--text);
-      -webkit-font-smoothing: antialiased; 
-      -moz-osx-font-smoothing: grayscale;
-    }
-    .wrap {
-      max-width: 1100px; 
-      margin: 40px auto; 
-      padding: 0 16px;
-    }
-    header { margin-bottom: 22px; }
-    header h1 { margin: 0 0 6px 0; font-size: 26px; }
-    header p { margin: 0; color: var(--muted); }
-    .grid {
-      display: flex;
-      flex-direction: column;
-      gap: var(--gap);
-    }
-    .card {
-      display: flex; 
-      flex-direction: column; 
-      justify-content: space-between;
-      background: var(--card);
-      border: 1px solid #ccc;
-      border-radius: var(--radius);
-      padding: 18px; 
-      text-decoration: none; 
-      color: var(--text);
-      transition: transform .15s ease, background .15s ease, border-color .15s ease;
-      min-height: 140px;
-    }
-    .card:hover { 
-      transform: translateY(-3px); 
-      background: var(--card-hover); 
-      border-color: #999;
-    }
-    .card .title {
-      font-weight: 700; 
-      font-size: 16px; 
-      line-height: 1.4; 
-      margin: 0 0 8px 0;
-    }
-    .card .desc {
-      margin: 0; 
-      color: var(--muted); 
-      font-size: 14px;
-    }
-    .card .badge {
-      margin-top: 14px; 
-      font-size: 12px; 
-      display: inline-block; 
-      color: var(--accent);
-    }
-    .icon {
-      width: 22px; 
-      height: 22px; 
-      border-radius: 6px; 
-      background: linear-gradient(135deg,#22d3ee,#06b6d4);
-      display: inline-block; 
-      vertical-align: middle; 
-      margin-right: 8px;
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio</title>
+<style>
+  :root {
+    --bg: #ffffff;
+    --card: #f5f5f5;
+    --card-hover: #e0e0e0;
+    --text: #222222;
+    --muted: #555555;
+    --accent: #22d3ee;
+    --radius: 14px;
+    --gap: 18px;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: sans-serif;
+    background: var(--bg);
+    color: var(--text);
+  }
+  .wrap {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 0 16px;
+  }
+  header { margin-bottom: 22px; }
+  header h1 { margin: 0 0 6px 0; font-size: 26px; }
+  header p { margin: 0; color: var(--muted); }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: var(--gap);
+  }
+  .card {
+    background: var(--card);
+    border: 1px solid #ccc;
+    border-radius: var(--radius);
+    text-decoration: none;
+    color: var(--text);
+    transition: transform .15s ease, background .15s ease, border-color .15s ease;
+    aspect-ratio: 1 / 1;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .card:hover {
+    transform: translateY(-3px);
+    background: var(--card-hover);
+    border-color: #999;
+  }
+  .title {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.4;
+    margin: 0 0 8px 0;
+  }
+  .desc {
+    margin: 0;
+    color: var(--muted);
+    font-size: 14px;
+  }
+  .badge {
+    margin-top: 14px;
+    font-size: 12px;
+    display: inline-block;
+    color: var(--accent);
+  }
+  .icon {
+    width: 22px;
+    height: 22px;
+    border-radius: 6px;
+    background: linear-gradient(135deg,#22d3ee,#06b6d4);
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 8px;
+  }
+</style>
 </head>
 <body>
-  <div class="wrap">
-    <header>
-      <h1>Amirhossein Tonekaboni</h1>
-      <p>Portfolio</p>
-    </header>
-    <div class="grid">
-      <a class="card" href="https://www.linkedin.com/in/tonekaboni" target="_blank" rel="noopener noreferrer">
-        <div>
-          <div class="title"><span class="icon"></span>LinkedIn Profile</div>
-          <p class="desc">SAP Business One ERP Consultant<br>Developing Data Analyst</p>
-        </div>
-      </a>
-      <a class="card" href="https://github.com/atonekaboni/SBO" target="_blank" rel="noopener noreferrer">
-        <div>
-          <div class="title"><span class="icon"></span>SAP Business One</div>
-          <p class="desc">SAP Business One Training Guides</p>
-        </div>
-      </a>
-      <a class="card" href="https://www.linkedin.com/in/tonekaboni/details/certifications/" target="_blank" rel="noopener noreferrer">
-        <div>
-          <div class="title"><span class="icon"></span>Licenses & certifications</div>
-        </div>
-      </a>
-    </div>
+<div class="wrap">
+  <header>
+    <h1>Amirhossein Tonekaboni</h1>
+    <p>Portfolio</p>
+  </header>
+  <div class="grid">
+    <a class="card" href="https://www.linkedin.com/in/tonekaboni" target="_blank" rel="noopener noreferrer">
+      <div>
+        <div class="title"><span class="icon"></span>LinkedIn Profile</div>
+        <p class="desc">SAP Business One ERP Consultant<br>Developing Data Analyst</p>
+      </div>
+    </a>
+    <a class="card" href="https://github.com/atonekaboni/SBO" target="_blank" rel="noopener noreferrer">
+      <div>
+        <div class="title"><span class="icon"></span>SAP Business One</div>
+        <p class="desc">SAP Business One Training Guides</p>
+      </div>
+    </a>
+    <a class="card" href="https://www.linkedin.com/in/tonekaboni/details/certifications/" target="_blank" rel="noopener noreferrer">
+      <div>
+        <div class="title"><span class="icon"></span>Licenses & certifications</div>
+      </div>
+    </a>
   </div>
+</div>
 </body>
 </html>
