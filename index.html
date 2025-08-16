@@ -1,361 +1,558 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en">
 <head>
 <meta charset="UTF-8">
+<title>Tonekaboni - Resume and Portfolio</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Amirhossein Tonekaboni - Portfolio</title>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
+<meta name="description" content="Amirhossein Tonekaboni - SAP Business One ERP Consultant and Data Analyst. Resume, GitHub, LinkedIn, direct contact for professional opportunities.">
+<meta name="keywords" content="SAP, SAP Business One, ERP Consultant, Data Analyst, Amirhossein Tonekaboni, Resume, LinkedIn, GitHub, Portfolio, SQL, Power BI, Python, Analytics, Tehran, Business Analysis, Implementation, Manufacturing, Certifications">
+<link rel="canonical" href="https://www.linkedin.com/in/tonekaboni/"/>
+<meta property="og:title" content="Amirhossein Tonekaboni - SAP Business One ERP Consultant and Data Analyst Portfolio"/>
+<meta property="og:description" content="Resume, GitHub, LinkedIn, and direct contact links for Amirhossein Tonekaboni, an ERP and data professional."/>
+<meta property="og:type" content="website"/>
+<meta property="og:url" content="https://www.linkedin.com/in/tonekaboni/"/>
+<meta property="og:image" content="https://media.licdn.com/dms/image/D4D03AQFU2qxkfLsIwA/profile-displayphoto-shrink_200_200/0/1709635022911?e=1758153600&v=beta&t=5TSpgb9i5MBACww4I_klamXZWHVZH4qxALRoZMzfhgE" />
+<link rel="icon" href="https://www.sap.com/etc/designs/sap/public/images/favicon.ico">
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Person",
+  "name": "Amirhossein Tonekaboni",
+  "jobTitle": "SAP Business One ERP Consultant and Data Analyst",
+  "url": "https://www.linkedin.com/in/tonekaboni/",
+  "image": "https://media.licdn.com/dms/image/D4D03AQFU2qxkfLsIwA/profile-displayphoto-shrink_200_200/0/1709635022911?e=1758153600&v=beta&t=5TSpgb9i5MBACww4I_klamXZWHVZH4qxALRoZMzfhgE",
+  "sameAs": [
+    "https://www.linkedin.com/in/tonekaboni/",
+    "https://github.com/atonekaboni/"
+  ]
+}
+</script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
 <style>
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  body {
-    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-    background: #fafbfc;
-    background-image: 
-      radial-gradient(circle at 25% 25%, #f0f9ff 0%, transparent 50%),
-      radial-gradient(circle at 75% 75%, #eff6ff 0%, transparent 50%);
-    color: #1f2937;
-    line-height: 1.6;
-    min-height: 100vh;
-  }
-  .container {
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 60px 24px;
-  }
-  .header {
-    text-align: center;
-    margin-bottom: 80px;
-  }
-  .header h1 {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 2.65rem;
-    font-weight: 800;
-    background: linear-gradient(135deg, #1e293b 0%, #475569 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    margin-bottom: 16px;
-    letter-spacing: -0.025em;
-    white-space: nowrap;
-  }
-  .header p {
-    font-size: 1.25rem;
-    color: #64748b;
-    font-weight: 500;
-    max-width: 500px;
-    margin: 0 auto;
-  }
-  .cards-grid {
-    display: flex;
-    flex-direction: column;
-    gap: 32px;
-  }
-  .card {
-    position: relative;
-    background: white;
-    border-radius: 24px;
-    box-shadow: 
-      0 1px 3px 0 rgba(0, 0, 0, 0.1),
-      0 1px 2px 0 rgba(0, 0, 0, 0.06);
-    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-    overflow: hidden;
-    cursor: pointer;
-    border: 1px solid #f1f5f9;
-    max-width: 550px;
-    margin: 0 auto;
-    width: 100%;
-  }
-  .card:hover {
-    transform: translateY(-12px);
-    box-shadow: 
-      0 25px 50px -12px rgba(0, 0, 0, 0.15),
-      0 0 0 1px rgba(59, 130, 246, 0.1);
-  }
-  
-  /* Training card should not be clickable but still have hover effect */
-  .training-card {
-    cursor: default;
-  }
-  
-  .card-header {
-    padding: 28px 28px 20px;
-    background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
-    position: relative;
-    overflow: hidden;
-  }
-  .card-header::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.05'%3E%3Ccircle cx='30' cy='30' r='1'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
-    pointer-events: none;
-  }
-  .card-title {
-    font-size: 1.6rem;
-    font-weight: 700;
-    color: white;
-    margin-bottom: 8px;
-    position: relative;
-    z-index: 1;
-  }
-  .card-subtitle {
-    color: #cbd5e1;
-    font-size: 0.95rem;
-    font-weight: 500;
-    position: relative;
-    z-index: 1;
-  }
-  .card-body {
-    padding: 28px;
-  }
-  .card-links {
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-  }
-  .card-links li {
-    position: relative;
-    z-index: 2;
-  }
-  .card-links a {
-    display: flex;
-    align-items: center;
-    padding: 14px 18px;
-    color: #374151;
-    text-decoration: none;
-    border-radius: 12px;
-    transition: all 0.3s ease;
-    font-weight: 500;
-    background: #f8fafc;
-    border: 1px solid #e2e8f0;
-    position: relative;
-    overflow: hidden;
-    font-size: 0.95rem;
-  }
-  .card-links a::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: -100%;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(90deg, transparent, rgba(59, 130, 246, 0.1), transparent);
-    transition: left 0.5s ease;
-  }
-  .card-links a:hover::before {
-    left: 100%;
-  }
-  .card-links a::after {
-    content: '→';
-    margin-left: auto;
-    font-size: 1.1rem;
-    color: #9ca3af;
-    transition: all 0.3s ease;
-  }
-  .card-links a:hover {
-    background: white;
-    border-color: #3b82f6;
-    color: #1e40af;
-    transform: translateX(6px);
-    box-shadow: 0 4px 12px rgba(59, 130, 246, 0.15);
-  }
-  .card-links a:hover::after {
-    color: #3b82f6;
-    transform: translateX(4px);
+:root {
+  --bg: #fff;
+  --text: #1f2937;
+  --card-bg: #fff;
+  --card-shadow: 0 1px 7px 0 rgba(0,0,0,0.07), 0 0px 1px 0 rgba(0,0,0,0.02);
+  --about-name: #151515;
+  --about-role: #374151;
+  --about-text: #232d36;
+  --toggle-track: #edeef2;
+  --toggle-knob: #fff;
+  --toggle-icon: #333;
+}
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  margin: 0;
+  transition: background 0.3s, color 0.3s;
+}
+body.dark {
+  --bg: #181f2a;
+  --text: #f1f5fa;
+  --card-bg: #212938;
+  --card-shadow: 0 1px 12px 0 rgba(30,74,185,0.13), 0 0px 2px 0 rgba(0,0,0,0.16);
+  --about-name: #fff;
+  --about-role: #e5e8ef;
+  --about-text: #f5faff;
+  --toggle-track: #22293b;
+  --toggle-knob: #e0e6ed;
+  --toggle-icon: #151924;
+}
+.theme-toggle {
+  position: fixed;
+  top: 18px;
+  right: 66px;
+  z-index: 30;
+}
+/* = LEFT HEADER = */
+.site-header {
+  width: 95%;
+  margin: 70px 0 0 0;
+  padding-left: 32px;
+  padding-right: 16px;
+}
+
+.header-content {
+  margin-left: 48px; /* Fixed pixel value for consistent alignment */
+}
+
+.site-main-title {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+  font-size: 2.2em;
+  letter-spacing: -1px;
+  text-align: left;
+  margin: 0 0 4px 0;
+  color: #244478;
+}
+
+body.dark .site-main-title { color: #e1e7f6; }
+
+.site-main-tagline {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.25em; /* Proportional to title size */
+  font-weight: 500;
+  color: #547196;
+  margin: 0;
+  text-align: left;
+  letter-spacing: 0;
+}
+
+body.dark .site-main-tagline { color: #a7beef; }
+
+.container {
+  min-height: 72vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  margin-top: 0;
+}
+
+@media (max-width:900px) {
+  .site-header { 
+    margin: 20px 0 20px 0; /* Reduce top margin and add bottom margin for better spacing on mobile */
+    padding-left: 0vw; 
+    padding-right: 15vw; 
+    text-align: left; /* Align header text to the left on mobile */
   }
   
-  .card-footer {
-    padding: 20px 28px 28px;
-    text-align: center;
-    background: linear-gradient(to bottom, transparent, #f8fafc);
-    border-top: 1px solid #f1f5f9;
+  .site-main-title { 
+    font-size: 1.4em;
+    text-align: left; /* Align the title to the left */
   }
-  .main-link-btn {
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-    padding: 14px 24px;
-    background: linear-gradient(135deg, #1e293b 0%, #334155 100%);
-    color: white;
-    text-decoration: none;
-    border-radius: 12px;
-    font-weight: 600;
-    font-size: 0.9rem;
-    transition: all 0.3s ease;
-    position: relative;
-    z-index: 2;
-    letter-spacing: 0.025em;
+  
+  .site-main-tagline { 
+    font-size: 1.1em;
+    text-align: left; /* Align the tagline to the left if present */
   }
-  .main-link-btn::after {
-    content: '↗';
-    font-size: 1rem;
-    transition: transform 0.3s ease;
+  
+  .container { 
+    margin-top: 0; /* Keep as is */
   }
-  .main-link-btn:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 12px 24px rgba(30, 41, 59, 0.4);
-    background: linear-gradient(135deg, #334155 0%, #475569 100%);
-  }
-  .main-link-btn:hover::after {
-    transform: translate(2px, -2px);
-  }
-  /* Special styling for LinkedIn card */
-  .linkedin-card .card-header {
-    background: linear-gradient(135deg, #0a66c2 0%, #004182 100%);
-  }
-  .linkedin-card .main-link-btn {
-    background: linear-gradient(135deg, #0a66c2 0%, #004182 100%);
-  }
-  .linkedin-card .main-link-btn:hover {
-    background: linear-gradient(135deg, #004182 0%, #002c5f 100%);
-    box-shadow: 0 12px 24px rgba(10, 102, 194, 0.4);
-  }
-  /* Special styling for SAP card */
-  .sap-card .card-header {
-    background: linear-gradient(135deg, #0070f3 0%, #0051cc 100%);
-  }
-  .sap-card .main-link-btn {
-    background: linear-gradient(135deg, #0070f3 0%, #0051cc 100%);
-  }
-  .sap-card .main-link-btn:hover {
-    background: linear-gradient(135deg, #0051cc 0%, #003d99 100%);
-    box-shadow: 0 12px 24px rgba(0, 112, 243, 0.4);
-  }
-  /* Special styling for Training card */
-  .training-card .card-header {
-    background: linear-gradient(135deg, #059669 0%, #047857 100%);
-  }
-  @media (max-width: 768px) {
-    .container {
-      padding: 40px 16px;
-      max-width: 100%;
-    }
-    .header h1 {
-      font-size: 2.2rem;
-      white-space: normal;
-    }
-    .header {
-      margin-bottom: 60px;
-    }
-    .cards-grid {
-      gap: 24px;
-    }
-    .card {
-      max-width: 100%;
-    }
-    .card-header,
-    .card-body,
-    .card-footer {
-      padding: 20px 18px;
-    }
-    .card-links a {
-      padding: 12px 16px;
-    }
-  }
-  @media (max-width: 480px) {
-    .header h1 {
-      font-size: 1.9rem;
-    }
-  }
-  .card[data-href] {
-    cursor: pointer;
-  }
-  @keyframes fadeInUp {
-    from {
-      opacity: 0;
-      transform: translateY(30px);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-  .card {
-    animation: fadeInUp 0.6s ease forwards;
-  }
-  .card:nth-child(1) { animation-delay: 0.1s; }
-  .card:nth-child(2) { animation-delay: 0.2s; }
-  .card:nth-child(3) { animation-delay: 0.3s; }
+}
+
+.theme-switch {
+  width: 48px; height: 28px;
+  background: var(--toggle-track);
+  border: 1.5px solid #d6dae4;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+  transition: background 0.22s, border-color 0.22s;
+}
+.theme-switch.dark { background: var(--toggle-track); border-color: #374151; }
+.theme-switch .switch-knob {
+  position: absolute;
+  top: 2.2px;
+  left: 2.2px;
+  width: 24px; height: 24px;
+  border-radius: 50%;
+  background: var(--toggle-knob);
+  box-shadow: 0 1px 4px rgba(50,80,180,0.08);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: left 0.24s, background 0.24s;
+  z-index: 2;
+  color: var(--toggle-icon);
+}
+.theme-switch.dark .switch-knob {
+  left: 21.6px;
+  background: var(--toggle-knob);
+  color: var(--toggle-icon);
+}
+.theme-switch .switch-knob svg {
+  width: 16px; height: 16px;
+  display: block;
+}
+.cards-grid .card {
+  opacity: 0;
+  transform: translateY(32px);
+  animation: card-fadein 0.6s cubic-bezier(.22,.68,.45,1) forwards;
+}
+.cards-grid .card:nth-child(1) { animation-delay: .07s; }
+.cards-grid .card:nth-child(2) { animation-delay: .17s; }
+.cards-grid .card:nth-child(3) { animation-delay: .27s; }
+.cards-grid .card:nth-child(4) { animation-delay: .36s; }
+@keyframes card-fadein {
+  to { opacity: 1; transform: none; }
+}
+.main-link-btn, .card-links a {
+  transition: transform 0.12s cubic-bezier(.45,.05,.58,.99), box-shadow 0.12s;
+}
+.main-link-btn:hover, .card-links a:focus, .card-links a:hover {
+  transform: scale(1.042);
+  box-shadow: 0 4px 14px rgba(75,100,180,0.09);
+  z-index: 1;
+}
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 420px));
+  gap: 36px;
+  align-items: stretch;
+  justify-content: center;
+  width: 100%;
+  max-width: 1800px;
+  padding: 0 12px;
+}
+@media (max-width: 1450px) {
+  .cards-grid { grid-template-columns: repeat(2, minmax(0, 420px)); }
+  .card { max-width: 420px; width: 420px;}
+}
+@media (max-width:900px) {
+  .cards-grid { grid-template-columns: 1fr; gap:14px;}
+  .card {max-width:98vw; width:98vw;}
+  .about-header-row { flex-direction: column; align-items: flex-start; gap: 9px;}
+  .about-img img { width: 48px; height: 48px;}
+  .main-link-btn { font-size:0.97em;}
+  .container { min-height: 67vh; }
+  .about-text-justify { max-width: 95vw;}
+  .about-name-job { height: auto; }
+}
+.card {
+  background: var(--card-bg);
+  border-radius: 20px;
+  box-shadow: var(--card-shadow);
+  border: 1px solid #eef2f6;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  min-height: 420px;
+  max-width: 420px;
+  width: 100%;
+  transition: box-shadow 0.22s, transform 0.15s, background 0.3s, color 0.3s;
+  font-size: 1.06em;
+  overflow: hidden;
+}
+.card-header {
+  font-family: 'Montserrat', sans-serif;
+  padding: 20px 24px 14px 24px;
+  border-radius: 20px 20px 0 0;
+  font-size: 1.12em;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 0;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+.about-card .card-header { background: linear-gradient(135deg, #202838 0%, #475569 100%) !important;}
+.linkedin-card .card-header { background: linear-gradient(135deg, #0a66c2 0%, #004182 100%) !important;}
+.sap-card .card-header { background: linear-gradient(135deg, #0070f3 0%, #0051cc 100%) !important;}
+.training-card .card-header { background: linear-gradient(135deg, #059669 0%, #047857 100%) !important;}
+.card-title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.14em;
+  font-weight: 800;
+  margin-bottom: 4px;
+  letter-spacing: -0.5px;
+}
+.card-subtitle {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 0.96em;
+  color: #e7ebe7;
+  opacity: 0.96;
+}
+.card-body { display: flex; flex-direction: column; justify-content: flex-start; flex: 1; min-height: 0; padding: 10px 18px 12px 18px;}
+.about-header-row { display: flex; align-items: center; gap: 17px; margin-bottom: 14px; margin-top: 12px;}
+.about-img { display: flex; align-items: center; justify-content: center;}
+.about-img img { width: 70px; height: 70px; border-radius: 16px; object-fit: cover; border:2px solid #b1c1e2; background:#eee; box-shadow: 0 1px 7px rgba(60,60,60,0.07);}
+.about-personal { display: flex; flex-direction: column; justify-content: center; min-width: 0; gap: 7px; align-items: flex-start; margin: 0;}
+.about-name-job { display: flex; flex-direction: column; justify-content: center; align-items: flex-start; height: 70px;}
+.about-name {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+  color: var(--about-name);
+  font-size: 1.22em;
+  letter-spacing: -0.03em;
+  line-height: 1.13em;
+  margin-bottom: 0;
+  margin-top: 0;
+  text-align: left;
+  text-decoration: none;
+  transition: color 0.19s;
+  display: inline-block;
+}
+.about-name:hover { color: #0a66c2;}
+.about-role {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.015em;
+  font-size: 0.92em;
+  color: var(--about-role);
+  margin-top: 1px;
+  margin-bottom: 0;
+  line-height: 1.4em;
+  text-align: left;
+  white-space: normal;
+  transition: color 0.3s;
+}
+.about-text-justify {
+  margin-top: 22px;
+  margin-bottom: 2px;
+  color: var(--about-text);
+  font-size: 1em;
+  max-width: 360px;
+  text-align: justify;
+  text-justify: inter-word;
+  line-height: 1.85;
+  margin-left: 0;
+  margin-right: 0;
+  align-self: flex-start;
+  transition: color 0.3s;
+}
+.card-links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-top: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: stretch;
+  flex: 1 1 auto;
+  justify-content: flex-start;
+  min-height: 176px;
+}
+.card-links a {
+  background: #f8fafc;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #374151;
+  border-radius: 10px;
+  font-weight: 500;
+  border: 1px solid #e2e8f0;
+  padding: 12px 18px;
+  font-size: 0.95em;
+  cursor: pointer;
+  text-decoration: none;
+  position: relative;
+  transition: all 0.25s;
+  overflow: hidden;
+  min-width: 0;
+  outline: none;
+}
+.card-links a:after {
+  content: '';
+  display: inline-block;
+  opacity: 0;
+  transition: opacity 0.17s, transform 0.2s;
+  margin-left: auto;
+  font-size: 1.09em;
+  color: #b0b5ba;
+  position: relative;
+  left: 0;
+  width: 0.9em;
+}
+.card-links a:hover:after, .card-links a:focus:after {
+  content: '→';
+  opacity: 1;
+  color: #475569;
+  left: 4px;
+  width: auto;
+}
+.about-card .card-links a:hover, .about-card .card-links a:focus { background: #ecf1f8; border-color: #35405e; color: #05203e;}
+.linkedin-card .card-links a:hover, .linkedin-card .card-links a:focus { background: #e8f0fb; border-color: #0a66c2; color: #0a66c2;}
+.sap-card .card-links a:hover, .sap-card .card-links a:focus { background: #e8f1fe; border-color: #0070f3; color: #0051cc;}
+.training-card .card-links a:hover, .training-card .card-links a:focus { background: #e6fbf3; border-color: #059669; color: #047857;}
+.main-link-btn {
+  font-family: 'Montserrat', sans-serif;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  border-radius: 13px;
+  font-weight: 600;
+  font-size: 1em;
+  border: none;
+  cursor: pointer;
+  transition: background 0.18s, box-shadow 0.18s, color 0.18s;
+  margin: 18px auto 0 auto;
+  padding: 12px 21px;
+  width: 90%;
+  justify-content: center;
+  text-decoration:none;
+  color: white;
+}
+.about-card .main-link-btn {
+  background: linear-gradient(135deg, #202838 0%, #475569 100%);
+  color: #fff;
+}
+.about-card .main-link-btn:hover {
+  background: linear-gradient(135deg, #232c3f 0%, #383f52 100%);
+  color: #e4eaf4;
+}
+.linkedin-card .main-link-btn {
+  background: linear-gradient(135deg, #0a66c2 0%, #004182 100%);
+}
+.linkedin-card .main-link-btn:hover { background: linear-gradient(135deg, #004182 0%, #002c5f 100%);}
+.sap-card .main-link-btn {
+  background: linear-gradient(135deg, #0070f3 0%, #0051cc 100%);
+}
+.sap-card .main-link-btn:hover { background: linear-gradient(135deg, #0051cc 0%, #003d99 100%);}
 </style>
 </head>
 <body>
-<div class="container">
-  <div class="header">
-    <h1>Amirhossein Tonekaboni</h1>
-    <p>SAP Business One ERP Consultant <br> Developing Data Analyst</p>
+<div class="theme-toggle">
+  <div class="theme-switch" id="themeSwitch" tabindex="0" title="Toggle light/dark mode" aria-label="Toggle theme">
+    <span class="switch-knob" id="switchKnob">
+      <svg id="themeKnobIcon" viewBox="0 0 20 20" fill="none">
+        <path d="M8 2a8 8 0 1 0 9.46 10.54A7 7 0 1 1 8 2Z" fill="currentColor"/>
+      </svg>
+    </span>
   </div>
+</div>
+<header class="site-header">
+  <div class="header-content">
+    <h1 class="site-main-title">Amirhossein Tonekaboni</h1>
+	<!-- <p class="site-main-tagline">Resume and Portfolio</p> -->
+  </div>
+</header>
+<div class="container">
   <div class="cards-grid">
-    <!-- LinkedIn Card -->
-    <div class="card linkedin-card" data-href="https://www.linkedin.com/in/tonekaboni">
+    <!-- About Card -->
+    <div class="card about-card">
       <div class="card-header">
-        <h3 class="card-title">LinkedIn Profile</h3>
-        <p class="card-subtitle">Professional Network & Connections</p>
+        <div>
+          <div class="card-title">About</div>
+          <div class="card-subtitle">Profile and Introduction</div>
+        </div>
+      </div>
+      <div class="card-body">
+        <div class="about-header-row">
+          <div class="about-img">
+            <img src="https://media.licdn.com/dms/image/v2/D4D03AQFU2qxkfLsIwA/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1709635022911?e=1758153600&v=beta&t=5TSpgb9i5MBACww4I_klamXZWHVZH4qxALRoZMzfhgE" alt="Amirhossein Tonekaboni">
+          </div>
+          <div class="about-personal about-name-job">
+            <a class="about-name" href="https://www.linkedin.com/in/tonekaboni/" target="_blank">
+              Amirhossein Tonekaboni
+            </a>
+            <div class="about-role">
+              SAP Business One ERP Consultant<br>
+              Developing Data Analyst
+            </div>
+          </div>
+        </div>
+        <div class="about-text-justify">
+          As an ERP expert with experience in <b>SAP Business One implementation</b> and process optimization, I specialize in data and business analysis—leveraging <b>Microsoft SQL</b>, <b>Python</b>, and <b>Power BI</b> to extract insights, optimize workflows, and support informed decision-making. Skilled in implementing and supporting ERP solutions, I work closely with cross-functional teams to enhance workflows and drive operational improvements.
+        </div>
+      </div>
+    </div>
+    <!-- Professional Contact Card -->
+    <div class="card linkedin-card">
+      <div class="card-header">
+        <div>
+          <div class="card-title">Professional Contact</div>
+          <div class="card-subtitle">Links and Direct Connections</div>
+        </div>
       </div>
       <div class="card-body">
         <ul class="card-links">
-          <li><a href="https://www.linkedin.com/in/tonekaboni/details/certifications/" target="_blank" onclick="event.stopPropagation()">View Certifications</a></li>
-          <li><a href="https://www.linkedin.com/in/tonekaboni/recent-activity/all/" target="_blank" onclick="event.stopPropagation()">Posts and Articles</a></li>
+          <li><a class="resume-link" href="https://www.shorturl.at/BmDkP" target="_blank" rel="noopener">Download Resume</a></li>
+          <li><a href="https://www.linkedin.com/in/tonekaboni/details/certifications/" target="_blank">View Certifications</a></li>
+          <li><a href="https://www.linkedin.com/in/tonekaboni/recent-activity/all/" target="_blank">Posts and Articles</a></li>
+          <li><a href="mailto:a.tonekaboni@gmail.com" target="_blank">Contact Me</a></li>
         </ul>
-      </div>
-      <div class="card-footer">
-        <span class="main-link-btn">Visit LinkedIn Profile</span>
+        <a class="main-link-btn" href="https://www.linkedin.com/in/tonekaboni" target="_blank">Visit LinkedIn</a>
       </div>
     </div>
     <!-- SAP Business One Card -->
-    <div class="card sap-card" data-href="https://github.com/atonekaboni/SBO/">
+    <div class="card sap-card">
       <div class="card-header">
-        <h3 class="card-title">SAP Business One</h3>
-        <p class="card-subtitle">Guides, Examples, and Resources</p>
+        <div>
+          <div class="card-title">SAP Business One</div>
+          <div class="card-subtitle">Guides, Examples and Resources</div>
+        </div>
       </div>
       <div class="card-body">
         <ul class="card-links">
-          <li><a href="https://www.linkedin.com/posts/tonekaboni_sap-business-one-available-to-promise-atp-activity-7330141250928508928-e81i/?utm_source=share" target="_blank" onclick="event.stopPropagation()">Advanced Available-to-Promise (ATP)</a></li>
-          <li><a href="https://www.linkedin.com/posts/tonekaboni_sap-business-one-recent-sales-items-activity-7332673836133281795-L2_k?utm_source=share" target="_blank" onclick="event.stopPropagation()">How to use Formatted Search in SAP Business One</a></li>
-          <li><a href="https://www.linkedin.com/pulse/supercharge-your-view-connected-business-partners-tonekaboni-wayse" target="_blank" onclick="event.stopPropagation()">Supercharge your view of Connected Business Partners</a></li>
-          <li><a href="https://www.linkedin.com/posts/tonekaboni_automating-sap-business-one-with-n8n-activity-7338469577615421440-7kD7?utm_source=share&utm_medium=member_desktop" target="_blank" onclick="event.stopPropagation()">Revolutionizing Sales with SAP Business One, n8n, and AI</a></li>
-          <li><a href="https://www.linkedin.com/posts/tonekaboni_sap-business-one-custom-sales-blocklist-activity-7355487934503882753-VPCk?utm_source=share&utm_medium=member_desktop" target="_blank" onclick="event.stopPropagation()">Building a Custom Sales Blocklist in SAP Business One</a></li>
+          <li>
+            <a href="https://www.linkedin.com/posts/tonekaboni_sap-business-one-available-to-promise-atp-activity-7330141250928508928-e81i/?utm_source=share" target="_blank">
+              Advanced Available-to-Promise (ATP)
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/posts/tonekaboni_sap-business-one-recent-sales-items-activity-7332673836133281795-L2_k?utm_source=share" target="_blank">
+              How to use Formatted Search in SAP Business One
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/pulse/supercharge-your-view-connected-business-partners-tonekaboni-wayse" target="_blank">
+              Supercharge your view of Connected Business Partners
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/posts/tonekaboni_automating-sap-business-one-with-n8n-activity-7338469577615421440-7kD7?utm_source=share&utm_medium=member_desktop" target="_blank">
+              Revolutionizing Sales with SAP Business One, n8n, and AI
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/posts/tonekaboni_sap-business-one-custom-sales-blocklist-activity-7355487934503882753-VPCk?utm_source=share&utm_medium=member_desktop" target="_blank">
+              Building a Custom Sales Blocklist in SAP Business One
+            </a>
+          </li>
         </ul>
-      </div>
-      <div class="card-footer">
-        <span class="main-link-btn">Open GitHub Repository</span>
+        <a class="main-link-btn" href="https://github.com/atonekaboni/SBO/" target="_blank">Go to GitHub Repository</a>
       </div>
     </div>
-    <!-- Training Guides Card - NO MAIN LINK, NO FOOTER, BUT BULLET LINKS WORK -->
+    <!-- Training Guides Card -->
     <div class="card training-card">
       <div class="card-header">
-        <h3 class="card-title">Training Guides</h3>
-        <p class="card-subtitle">Other Posts and Training Guides</p>
+        <div>
+          <div class="card-title">Training Guides</div>
+          <div class="card-subtitle">Reference and Tutorials</div>
+        </div>
       </div>
       <div class="card-body">
         <ul class="card-links">
-          <li><a href="https://www.linkedin.com/posts/tonekaboni_leveraging-pcf-framework-for-successful-erp-activity-7350879466652418048-3j1-/?utm_source=share" target="_blank">PCF framework for successful ERP Implementation</a></li>
-          <li><a href="https://www.linkedin.com/posts/tonekaboni_month-over-month-calculations-activity-7353005724702015490-_AOW/?utm_source=share" target="_blank">Month-over-Month Calculations</a></li>
-          <li><a href="https://www.linkedin.com/posts/tonekaboni_datascience-python-eda-activity-7356283479581483009-yizk?utm_source=share&utm_medium=member_desktop" target="_blank">Data Science in Python: Data Prep & EDA</a></li>
-          <li><a href="https://www.linkedin.com/posts/tonekaboni_python-pandas-cheat-sheet-activity-7359636721497452546-bJ6K?utm_source=share&utm_medium=member_desktop" target="_blank">Python Pandas Cheat Sheet</a></li>
+          <li>
+            <a href="https://www.linkedin.com/posts/tonekaboni_leveraging-pcf-framework-for-successful-erp-activity-7350879466652418048-3j1-/?utm_source=share" target="_blank">
+              PCF framework for successful ERP Implementation
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/posts/tonekaboni_month-over-month-calculations-activity-7353005724702015490_-AOW/?utm_source=share" target="_blank">
+              Month-over-Month Calculations
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/posts/tonekaboni_datascience-python-eda-activity-7356283479581483009-yizk?utm_source=share&utm_medium=member_desktop" target="_blank">
+              Data Science in Python: Data Preparation and EDA
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/posts/tonekaboni_python-pandas-cheat-sheet-activity-7359636721497452546-bJ6K?utm_source=share&utm_medium=member_desktop" target="_blank">
+              Python Pandas Cheat Sheet
+            </a>
+          </li>
         </ul>
       </div>
     </div>
   </div>
 </div>
 <script>
-document.addEventListener('DOMContentLoaded', function() {
-  const cards = document.querySelectorAll('.card[data-href]');
-  cards.forEach(card => {
-    card.addEventListener('click', function(e) {
-      if (e.target === this || e.target.closest('.card-header, .card-footer')) {
-        window.open(this.dataset.href, '_blank');
-      }
-    });
-  });
-});
+  const themeSwitch = document.getElementById('themeSwitch');
+  const themeKnobIcon = document.getElementById('themeKnobIcon');
+  function setTheme(dark) {
+    document.body.classList.toggle('dark', dark);
+    themeSwitch.classList.toggle('dark', dark);
+    themeKnobIcon.innerHTML = dark
+      ? `<circle cx="10" cy="10" r="4" fill="currentColor"/><g stroke="currentColor" stroke-width="1.3"><line x1="10" y1="1" x2="10" y2="3"/><line x1="10" y1="17" x2="10" y2="19"/><line x1="17" y1="10" x2="19" y2="10"/><line x1="1" y1="10" x2="3" y2="10"/><line x1="15.07" y1="15.07" x2="16.49" y2="16.49"/><line x1="3.51" y1="3.51" x2="4.93" y2="4.93"/><line x1="3.51" y1="16.49" x2="4.93" y2="15.07"/><line x1="15.07" y1="4.93" x2="16.49" y2="3.51"/></g>`
+      : `<path d="M8 2a8 8 0 1 0 9.46 10.54A7 7 0 1 1 8 2Z" fill="currentColor"/>`;
+    localStorage.setItem('theme', dark ? 'dark' : 'light');
+  }
+  themeSwitch.onclick = () => setTheme(!document.body.classList.contains('dark'));
+  setTheme(false);
+  if(localStorage.getItem('theme') === 'dark') setTheme(true);
 </script>
 </body>
 </html>
