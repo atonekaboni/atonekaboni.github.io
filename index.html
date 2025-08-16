@@ -66,18 +66,16 @@ body.dark {
   right: 66px;
   z-index: 30;
 }
-/* = LEFT HEADER = */
 .site-header {
-  width: 95%;
-  margin: 70px 0 0 0;
-  padding-left: 32px;
-  padding-right: 16px;
+  width: 100%; /* Full width to match cards */
+  max-width: 1800px; /* Same max-width as cards */
+  margin: 70px auto 0 auto; /* Center it like cards */
+  padding: 0 12px; /* Same padding as cards */
+  box-sizing: border-box;
 }
-
 .header-content {
-  margin-left: 48px; /* Fixed pixel value for consistent alignment */
+  margin-left: 48px; 
 }
-
 .site-main-title {
   font-family: 'Montserrat', sans-serif;
   font-weight: 900;
@@ -87,21 +85,17 @@ body.dark {
   margin: 0 0 4px 0;
   color: #244478;
 }
-
 body.dark .site-main-title { color: #e1e7f6; }
-
 .site-main-tagline {
   font-family: 'Montserrat', sans-serif;
-  font-size: 1.25em; /* Proportional to title size */
+  font-size: 1.25em; 
   font-weight: 500;
   color: #547196;
   margin: 0;
   text-align: left;
   letter-spacing: 0;
 }
-
 body.dark .site-main-tagline { color: #a7beef; }
-
 .container {
   min-height: 72vh;
   width: 100vw;
@@ -111,30 +105,33 @@ body.dark .site-main-tagline { color: #a7beef; }
   box-sizing: border-box;
   margin-top: 0;
 }
-
 @media (max-width:900px) {
-  .site-header { 
-    margin: 20px 0 20px 0; /* Reduce top margin and add bottom margin for better spacing on mobile */
-    padding-left: 0vw; 
-    padding-right: 15vw; 
-    text-align: left; /* Align header text to the left on mobile */
-  }
-  
-  .site-main-title { 
-    font-size: 1.4em;
-    text-align: left; /* Align the title to the left */
-  }
-  
-  .site-main-tagline { 
-    font-size: 1.1em;
-    text-align: left; /* Align the tagline to the left if present */
-  }
-  
-  .container { 
-    margin-top: 0; /* Keep as is */
-  }
+    .site-header {
+        margin: 20px auto 20px auto; /* Keep centering on mobile */
+        width: 100%;
+        padding-left: 0; /* Reset padding for mobile */
+        padding-right: 0;
+        box-sizing: border-box;
+        text-align: center;
+    }
+    .header-content {
+        margin-left: 16px; /* Mobile left padding */
+    }
+    .theme-toggle {
+        right: 16px;
+    }
+    .site-main-title {
+        font-size: 1.4em;
+        text-align: left; 
+    }
+    .site-main-tagline {
+        font-size: 1.1em;
+        text-align: left; 
+    }
+    .container {
+        margin-top: 0;
+    }
 }
-
 .theme-switch {
   width: 48px; height: 28px;
   background: var(--toggle-track);
@@ -414,7 +411,7 @@ body.dark .site-main-tagline { color: #a7beef; }
 <header class="site-header">
   <div class="header-content">
     <h1 class="site-main-title">Amirhossein Tonekaboni</h1>
-	<!-- <p class="site-main-tagline">Resume and Portfolio</p> -->
+	<p class="site-main-tagline">Resume and Portfolio</p>
   </div>
 </header>
 <div class="container">
