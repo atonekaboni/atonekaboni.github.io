@@ -48,6 +48,7 @@ body {
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   margin: 0;
   transition: background 0.3s, color 0.3s;
+  overflow-x: hidden;
 }
 body.dark {
   --bg: #181f2a;
@@ -62,15 +63,15 @@ body.dark {
   --toggle-icon: #151924;
 }
 .theme-toggle {
-  position: fixed;
-  top: 18px;
-  right: 66px;
+  position: absolute;
+  top: 88px;
+  right: 58px;
   z-index: 30;
 }
 .site-header {
   width: 100%; /* Full width to match cards */
   max-width: 1800px; /* Same max-width as cards */
-  margin: 70px auto 0 auto; /* Center it like cards */
+  margin: 80px auto 0 auto; /* Center it like cards */
   padding: 0 12px; /* Same padding as cards */
   box-sizing: border-box;
 }
@@ -119,7 +120,10 @@ body.dark .site-main-tagline { color: #a7beef; }
         margin-left: 16px; /* Mobile left padding */
     }
     .theme-toggle {
-        right: 16px;
+        right: 20px !important;
+        position: fixed !important;
+        top: 28px !important;
+        z-index: 30 !important;
     }
     .site-main-title {
         font-size: 1.4em;
@@ -331,7 +335,7 @@ body.dark .site-main-tagline { color: #a7beef; }
   font-weight: 500;
   border: 1px solid #e2e8f0;
   padding: 12px 18px;
-  font-size: 0.95em;
+  font-size: 0.85em;
   cursor: pointer;
   text-decoration: none;
   position: relative;
@@ -397,6 +401,204 @@ body.dark .site-main-tagline { color: #a7beef; }
   background: linear-gradient(135deg, #0070f3 0%, #0051cc 100%);
 }
 .sap-card .main-link-btn:hover { background: linear-gradient(135deg, #0051cc 0%, #003d99 100%);}
+
+.projects-section {
+  width: 100%;
+  max-width: 1800px;
+  margin: 60px auto 40px auto;
+  padding: 0 12px;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+.projects-header {
+  text-align: left;
+  margin-bottom: 40px;
+  margin-left: 48px;
+  max-width: calc(100% - 96px);
+  box-sizing: border-box;
+}
+
+.projects-title {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+  font-size: 2em;
+  color: #244478;
+  margin: 0 0 8px 0;
+  text-align: left;
+}
+
+body.dark .projects-title { color: #e1e7f6; }
+
+.projects-subtitle {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.1em;
+  font-weight: 500;
+  color: #547196;
+  margin: 0;
+  text-align: left;
+}
+body.dark .projects-subtitle { color: #a7beef; }
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 420px));
+  gap: 36px;
+  align-items: stretch;
+  justify-content: center;
+  width: 100%;
+  max-width: 1800px;
+  padding: 0 12px;
+}
+
+@media (max-width: 1450px) {
+  .projects-grid { grid-template-columns: repeat(2, minmax(0, 420px)); }
+}
+
+@media (max-width: 900px) {
+  .projects-grid {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+  .projects-section {
+    margin: 40px auto 30px auto;
+    padding: 0 6px;
+  }
+  .projects-header {
+    margin-left: 16px;
+  }
+  .project-card {
+    max-width: 92vw !important;
+    width: 92vw !important;
+    min-width: 0 !important;
+    margin: 0 0 0 0vw !important;
+  }
+  .project-content {
+    padding: 10px 18px 12px 18px;
+  }
+}
+
+.project-card {
+  background: var(--card-bg);
+  border-radius: 20px;
+  box-shadow: var(--card-shadow);
+  border: 1px solid #eef2f6;
+  overflow: hidden;
+  transition: transform 0.15s, box-shadow 0.22s;
+  max-width: 400px;
+  width: 100%;
+  min-height: 520px;
+  display: flex;
+  flex-direction: column;
+  font-size: 1.06em;
+  transition: box-shadow 0.22s, transform 0.15s, background 0.3s, color 0.3s;
+  min-width: 0;
+}
+
+.project-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+}
+
+.project-thumbnail {
+  width: 100%;
+  height: 240px;
+  background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3em;
+  color: #64748b;
+  margin: 0px auto 0 auto;
+  border-radius: 12px;
+}
+
+body.dark .project-thumbnail {
+  background: transparent;
+  color: #94a3b8;
+}
+
+.project-content {
+  padding: 20px 18px 12px 18px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  flex: 1;
+  min-height: 0;
+}
+
+.project-title {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 1.2em;
+  color: var(--about-name);
+  margin: 16px 0 12px 0;
+  line-height: 1.3;
+}
+
+.project-description {
+  color: var(--about-text);
+  font-size: 0.9em;
+  line-height: 1.6;
+  margin-bottom: 16px;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.project-features {
+  margin-bottom: 20px;
+}
+
+.project-features h4 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 0.85em;
+  color: var(--about-role);
+  margin: 0 0 8px 0;
+}
+
+.project-features ul {
+  margin: 0;
+  padding-left: 16px;
+  color: var(--about-text);
+  font-size: 0.8em;
+  line-height: 1.5;
+}
+
+.project-links {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0;
+}
+
+.project-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  color: #64748b;
+  text-decoration: none;
+  transition: all 0.2s;
+  font-size: 0.9em;
+}
+
+.project-link:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.project-link.linkedin:hover { background: #e8f0fb; border-color: #0a66c2; color: #0a66c2; }
+.project-link.github:hover { background: #f6f8fa; border-color: #373838; color: #24292f; }
+.project-link.excel:hover { background: #e8f5e8; border-color: #45b477; color: #217346; }
+.project-link.docs:hover { background: #e8f0fe; border-color: #1a73e8; color: #1a73e8; }
+.project-link.maven:hover { background: #e6e6e6; border-color: #636262; color: #797574; }
+.project-link.powerbi:hover { background: #fff3cd; border-color: #ffee00; color: #f8c182; }
 </style>
 </head>
 <body>
@@ -412,7 +614,7 @@ body.dark .site-main-tagline { color: #a7beef; }
 <header class="site-header">
   <div class="header-content">
     <h1 class="site-main-title">Amirhossein Tonekaboni</h1>
-	<p class="site-main-tagline">Resume and Portfolio</p>
+    <p class="site-main-tagline">Resume and Portfolio</p>
   </div>
 </header>
 <div class="container">
@@ -502,11 +704,11 @@ body.dark .site-main-tagline { color: #a7beef; }
         <a class="main-link-btn" href="https://github.com/atonekaboni/SBO/" target="_blank">Go to GitHub Repository</a>
       </div>
     </div>
-    <!-- Training Guides Card -->
+    <!-- Learning and Resources Card -->
     <div class="card training-card">
       <div class="card-header">
         <div>
-          <div class="card-title">Training Guides</div>
+          <div class="card-title">Learning and Resources</div>
           <div class="card-subtitle">Reference and Tutorials</div>
         </div>
       </div>
@@ -542,6 +744,56 @@ body.dark .site-main-tagline { color: #a7beef; }
     </div>
   </div>
 </div>
+
+<section class="projects-section">
+  <div class="projects-header">
+    <h2 class="projects-title">Projects</h2>
+    <p class="projects-subtitle">Data Analysis and Business Intelligence</p>
+  </div>
+  <div class="projects-grid">
+    <div class="project-card">
+      <div class="project-thumbnail">
+        <img src="https://github.com/user-attachments/assets/75d77bec-8cde-43ab-9065-c4989ea02205" alt="Toy Store Sales Revenue Project" style="width: 72%; margin: 60px auto 0 auto; height: auto; object-fit: contain; border-radius: 8px;">
+      </div>
+      <div class="project-content">
+        <br>
+        <h3 class="project-title">Toy Store Sales Revenue</h3>
+        <p class="project-description">
+          This project analyzes Maven Toy Store sales data using both <b>Python</b> (Jupyter Notebook) and <b>Excel</b>. Explore sales trends, top products, and weekday vs. weekend performance with interactive dashboards in both tools.
+        </p>
+        <div class="project-features">
+          <h4>Features</h4>
+          <ul>
+            <li>Revenue trend visualization and dashboard</li>
+            <li>Weekday vs. weekend sales comparison</li>
+            <li>Top product analysis</li>
+          </ul>
+        </div>
+        <div class="project-links">
+          <a href="https://www.linkedin.com/posts/tonekaboni_excel-dataanalysis-dashboard-activity-7364607569014800385-viuc/" class="project-link linkedin" title="LinkedIn Post" target="_blank">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" alt="LinkedIn" style="width: 20px; height: 20px;">
+          </a>
+          <a href="https://github.com/atonekaboni/Toy_Store/" class="project-link github" title="GitHub Repository" target="_blank">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" style="width: 20px; height: 20px;">
+          </a>
+          <a href="https://onedrive.live.com/personal/bacea17d0cf2ed30/_layouts/15/doc2.aspx?sourcedoc=%7B95c9e14d-131e-4792-9751-7e1d807b6b66%7D&action=default&redeem=aHR0cHM6Ly8xZHJ2Lm1zL3gvYy9iYWNlYTE3ZDBjZjJlZDMwL0VVM2h5WlVlRTVKSGwxRi1IWUI3YTJZQlE2TWNSdHpPWmZwVzlxYzBRR1ExZlE_ZT1jeVpMUHI&slrid=8ab5bea1-205c-d000-ba4f-71222a0c558b&originalPath=aHR0cHM6Ly8xZHJ2Lm1zL3gvYy9iYWNlYTE3ZDBjZjJlZDMwL0VVM2h5WlVlRTVKSGwxRi1IWUI3YTJZQlE2TWNSdHpPWmZwVzlxYzBRR1ExZlE_cnRpbWU9T3ZzYk41bmkzVWc&CID=42d82fcb-3ccf-4d9b-a3ac-6e83406b7a4e&_SRM=0:G:51" class="project-link excel" title="Excel File" target="_blank">
+            <img src="https://img.icons8.com/color/48/microsoft-excel-2019.png" alt="Excel" style="width: 20px; height: 20px;">
+          </a>
+          <a href="https://docs.google.com/document/d/1NhvtaXnxcbc3xwRru4Stq_qN87IqSo_fHpozZlbh62Q/" class="project-link docs" title="Google Docs" target="_blank">
+            <img src="https://img.icons8.com/color/48/google-docs.png" alt="Google Docs" style="width: 20px; height: 20px;">
+          </a>
+          <a href="https://mavenshowcase.com/profile/9881d3c0-4031-7020-46f3-98e7d2f7790a" class="project-link maven" title="Maven Analytics Showcase" target="_blank">
+            <img src="https://media.licdn.com/dms/image/v2/C4E0BAQGKWpCXrVLm3Q/company-logo_200_200/company-logo_200_200/0/1630580865071/maven_analytics_logo?e=1758758400&v=beta&t=_OvqoJoaV4YQCQqMRPT8WZBjcpBr80cOwAgmuPMSBPE" alt="Maven Analytics" style="width: 20px; height: 20px;">
+          </a>
+          <!-- <a href="#" class="project-link powerbi" title="Power BI Dashboard">
+            <img src="https://img.icons8.com/color/48/power-bi.png" alt="Power BI" style="width: 20px; height: 20px;">
+          </a> -->
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <script>
   const themeSwitch = document.getElementById('themeSwitch');
   const themeKnobIcon = document.getElementById('themeKnobIcon');
