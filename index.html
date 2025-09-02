@@ -5,7 +5,7 @@
 <title>Tonekaboni - Resume and Portfolio</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="Amirhossein Tonekaboni - SAP Business One ERP Consultant and Data Analyst. Resume, GitHub, LinkedIn, direct contact for professional opportunities.">
-<meta name="keywords" content="SAP, SAP Business One, ERP Consultant, Data Analyst, Amirhossein Tonekaboni, Resume, LinkedIn, GitHub, Portfolio, SQL, Power BI, Python, Excel, Analytics, Tehran, Business Analysis, Implementation, Manufacturing, Certifications">
+<meta name="keywords" content="SAP, SAP Business One, ERP Consultant, Data Analyst, Amirhossein Tonekaboni, Resume, LinkedIn, GitHub, Portfolio, SQL, Power BI, Python, Analytics, Tehran, Business Analysis, Implementation, Manufacturing, Certifications">
 <link rel="canonical" href="https://www.linkedin.com/in/tonekaboni/"/>
 <meta property="og:title" content="Amirhossein Tonekaboni - SAP Business One ERP Consultant and Data Analyst Portfolio"/>
 <meta property="og:description" content="Resume, GitHub, LinkedIn, and direct contact links for Amirhossein Tonekaboni, an ERP and data professional."/>
@@ -49,6 +49,7 @@ body {
   margin: 0;
   transition: background 0.3s, color 0.3s;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 body.dark {
   --bg: #181f2a;
@@ -302,7 +303,7 @@ body.dark .site-main-tagline { color: #a7beef; }
   margin-top: 22px;
   margin-bottom: 2px;
   color: var(--about-text);
-  font-size: 1em;
+  font-size: 15px;
   max-width: 360px;
   text-align: justify;
   text-justify: inter-word;
@@ -401,6 +402,10 @@ body.dark .site-main-tagline { color: #a7beef; }
   background: linear-gradient(135deg, #0070f3 0%, #0051cc 100%);
 }
 .sap-card .main-link-btn:hover { background: linear-gradient(135deg, #0051cc 0%, #003d99 100%);}
+.training-card .main-link-btn {
+  background: linear-gradient(135deg, #059669 0%, #047857 100%);
+}
+.training-card .main-link-btn:hover { background: linear-gradient(135deg, #047857 0%, #065f46 100%);}
 
 .projects-section {
   width: 100%;
@@ -614,7 +619,7 @@ body.dark .project-thumbnail {
 <header class="site-header">
   <div class="header-content">
     <h1 class="site-main-title">Amirhossein Tonekaboni</h1>
-    <p class="site-main-tagline">Resume and Portfolio</p>
+    <p class="site-main-tagline">Resume and Portfolio</p><br>
   </div>
 </header>
 <div class="container">
@@ -643,26 +648,52 @@ body.dark .project-thumbnail {
           </div>
         </div>
         <div class="about-text-justify">
-          As an ERP expert with experience in <b>SAP Business One implementation</b> and process optimization, I specialize in data and business analysis—leveraging <b>Microsoft SQL</b>, <b>Python</b>, and <b>Power BI</b> to extract insights, optimize workflows, and support informed decision-making. Skilled in implementing and supporting ERP solutions, I work closely with cross-functional teams to enhance workflows and drive operational improvements.
+          As an ERP expert with experience in <b>SAP Business One implementation</b> and process optimization, I specialize in data and business analysis, leveraging <b>Microsoft SQL</b>, <b>Python</b>, and <b>Power BI</b> to extract insights, optimize workflows, and support informed decision-making. Skilled in implementing and supporting ERP solutions, I work closely with cross-functional teams to enhance workflows and drive operational improvements.
         </div>
+        <br><div class="project-links">
+          <a href="https://www.linkedin.com/in/tonekaboni" class="project-link linkedin" title="LinkedIn" target="_blank">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" alt="LinkedIn" style="width: 20px; height: 20px;">
+          </a>
+          <a href="https://github.com/atonekaboni/" class="project-link github" title="GitHub" target="_blank">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" style="width: 20px; height: 20px;">
+          </a>
+          <!-- <a href="https://www.linkedin.com/in/tonekaboni/details/certifications/" class="project-link Licenses" title="Certifications" target="_blank">
+            <img src="https://cdn-icons-png.flaticon.com/512/3135/3135763.png" alt="Certifications" style="width: 20px; height: 20px;">
+          </a> -->
+          <a href="a.tonekaboni@gmail.com" class="project-link email" title="Contact Me">
+            <img src="https://workspace.google.com/lp/static/images/logo-gmail.png" alt="Email" style="width: 20px; height: 20px;">
+          </a>
+          <a href="https://drive.google.com/file/d/10HR__ybK1eiLgx_iw4zNwhLgqG45v6Ui/" class="project-link cv" title="Resume" target="_blank">
+            <span style="font-family: 'Montserrat', sans-serif; font-weight: 800; font-size: 20px; color: #3d4047; text-shadow: 0.5px 0.5px 0px rgba(0,0,0,0.2);">CV</span>
+          </a>
+          <!-- <a href="https://atonekaboni.medium.com/" class="project-link medium" title="Medium File" target="_blank">
+            <img src="https://logo.svgcdn.com/s/medium-dark-8x.png" alt="Medium" style="width: 20px; height: 20px;">
+          </a>  -->
+          <!-- <a href="https://mavenshowcase.com/profile/9881d3c0-4031-7020-46f3-98e7d2f7790a" class="project-link maven" title="Maven Analytics Showcase" target="_blank">
+            <img src="https://media.licdn.com/dms/image/v2/C4E0BAQGKWpCXrVLm3Q/company-logo_200_200/company-logo_200_200/0/1630580865071/maven_analytics_logo?e=1758758400&v=beta&t=_OvqoJoaV4YQCQqMRPT8WZBjcpBr80cOwAgmuPMSBPE" alt="Maven Analytics" style="width: 20px; height: 20px;">
+          </a>  -->
+          </div>
       </div>
     </div>
-    <!-- Professional Contact Card -->
+    <!-- Data Portfolio Card -->
     <div class="card linkedin-card">
       <div class="card-header">
         <div>
-          <div class="card-title">Professional Contact</div>
-          <div class="card-subtitle">Links and Direct Connections</div>
+          <div class="card-title">Data Portfolio</div>
+          <div class="card-subtitle">Projects, Codes and Dashboards</div>
         </div>
       </div>
       <div class="card-body">
         <ul class="card-links">
-          <li><a class="resume-link" href="https://drive.google.com/file/d/10HR__ybK1eiLgx_iw4zNwhLgqG45v6Ui/" target="_blank" rel="noopener">Download Resume</a></li>
-          <li><a href="https://www.linkedin.com/in/tonekaboni/details/certifications/" target="_blank">View Certifications</a></li>
-          <li><a href="https://www.linkedin.com/in/tonekaboni/recent-activity/all/" target="_blank">Posts and Articles</a></li>
-          <li><a href="mailto:a.tonekaboni@gmail.com" target="_blank">Contact Me</a></li>
+          <li><a href="https://github.com/atonekaboni/Toy_Store/" target="_blank">Sales Revenue Report</a></li>
+          <!-- <li><a href="https://www.linkedin.com/in/tonekaboni/details/certifications/" target="_blank">View Certifications</a></li> -->
+          <li>
+            <a href="https://www.linkedin.com/posts/tonekaboni_github-atonekabonipythonchallenge-python-activity-7363473713289146372-r2NP" target="_blank">
+              Python Pandas Challenge <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/110px-Python-logo-notext.svg.png" alt="Python" style="width: 16px; height: 16px; vertical-align: middle;">
+            </a>
+          </li>	
         </ul>
-        <a class="main-link-btn" href="https://www.linkedin.com/in/tonekaboni" target="_blank">Visit LinkedIn</a>
+        <a class="main-link-btn" href="https://www.linkedin.com/in/tonekaboni" target="_blank">Showcase</a>
       </div>
     </div>
     <!-- SAP Business One Card -->
@@ -682,26 +713,26 @@ body.dark .project-thumbnail {
           </li>
           <li>
             <a href="https://www.linkedin.com/posts/tonekaboni_sap-business-one-recent-sales-items-activity-7332673836133281795-L2_k?utm_source=share" target="_blank">
-              How to use Formatted Search in SAP Business One
+              Formatted Search (FMS)
             </a>
           </li>
           <li>
             <a href="https://www.linkedin.com/pulse/supercharge-your-view-connected-business-partners-tonekaboni-wayse" target="_blank">
-              Supercharge your view of Connected Business Partners
+              Connected Business Partners
             </a>
           </li>
           <li>
             <a href="https://www.linkedin.com/posts/tonekaboni_automating-sap-business-one-with-n8n-activity-7338469577615421440-7kD7?utm_source=share&utm_medium=member_desktop" target="_blank">
-              Revolutionizing Sales with SAP Business One, n8n, and AI
+              Revolutionizing Sales with SAP B1, n8n, and AI
             </a>
           </li>
           <li>
             <a href="https://www.linkedin.com/posts/tonekaboni_sap-business-one-custom-sales-blocklist-activity-7355487934503882753-VPCk?utm_source=share&utm_medium=member_desktop" target="_blank">
-              Building a Custom Sales Blocklist in SAP Business One
+              Building a Custom Sales Blocklist
             </a>
           </li>
         </ul>
-        <a class="main-link-btn" href="https://github.com/atonekaboni/SBO/" target="_blank">Go to GitHub Repository</a>
+        <a class="main-link-btn" href="https://github.com/atonekaboni/SBO/" target="_blank">SAP GitHub Repository</a>
       </div>
     </div>
     <!-- Learning and Resources Card -->
@@ -716,7 +747,7 @@ body.dark .project-thumbnail {
         <ul class="card-links">
           <li>
             <a href="https://www.linkedin.com/posts/tonekaboni_leveraging-pcf-framework-for-successful-erp-activity-7350879466652418048-3j1-/?utm_source=share" target="_blank">
-              PCF framework for successful ERP Implementation
+              APQC PCF framework for ERP Implementation
             </a>
           </li>
           <li>
@@ -726,26 +757,29 @@ body.dark .project-thumbnail {
           </li>
           <li>
             <a href="https://www.linkedin.com/posts/tonekaboni_datascience-python-eda-activity-7356283479581483009-yizk?utm_source=share&utm_medium=member_desktop" target="_blank">
-              Data Science in Python: Data Preparation and EDA
+              Data Science in Python: Data Prep and EDA
             </a>
           </li>
           <li>
             <a href="https://www.linkedin.com/posts/tonekaboni_python-pandas-cheat-sheet-activity-7359636721497452546-bJ6K?utm_source=share&utm_medium=member_desktop" target="_blank">
               Python Pandas Cheat Sheet
             </a>
-          </li>
-          <li>
-            <a href="https://www.linkedin.com/posts/tonekaboni_github-atonekabonipythonchallenge-python-activity-7363473713289146372-r2NP" target="_blank">
-              Python Pandas Challenge 🧩
-            </a>
-          </li>		
+          </li>	
+          <!-- <li><a href="https://www.linkedin.com/in/tonekaboni/recent-activity/all/" target="_blank">Posts and Articles</a></li> -->
         </ul>
+        <a class="main-link-btn" href="https://www.linkedin.com/in/tonekaboni/recent-activity/all/" target="_blank">Posts and Articles</a>
       </div>
     </div>
   </div>
 </div>
 
-<section class="projects-section">
+<div style="text-align: center; margin: 20px 0 10px 0;">
+  <a href="#projects-section" onclick="document.getElementById('projects-section').scrollIntoView({behavior: 'smooth'}); return false;" style="text-decoration: none; transition: all 0.3s; cursor: pointer; display: inline-block;" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/e/e9/Arrow_bottom.png" alt="Scroll Down" style="width: 40px; height: 40px; opacity: 0.7; transition: opacity 0.3s;" onmouseover="this.style.opacity='1'" onmouseout="this.style.opacity='0.7'">
+  </a>
+</div>
+
+<section class="projects-section" id="projects-section">
   <div class="projects-header">
     <h2 class="projects-title">Projects</h2>
     <p class="projects-subtitle">Data Analysis and Business Intelligence</p>
@@ -753,16 +787,16 @@ body.dark .project-thumbnail {
   <div class="projects-grid">
     <div class="project-card">
       <div class="project-thumbnail">
-        <img src="https://github.com/user-attachments/assets/75d77bec-8cde-43ab-9065-c4989ea02205" alt="Toy Store Sales Revenue Project" style="width: 72%; margin: 60px auto 0 auto; height: auto; object-fit: contain; border-radius: 8px;">
+        <img src="https://github.com/user-attachments/assets/75d77bec-8cde-43ab-9065-c4989ea02205" alt="Sales Revenue Report" style="width: 72%; margin: 60px auto 0 auto; height: auto; object-fit: contain; border-radius: 8px; cursor: pointer;" onclick="window.open('https://github.com/atonekaboni/Toy_Store/', '_blank')">
       </div>
       <div class="project-content">
         <br>
-        <h3 class="project-title">Toy Store Sales Revenue</h3>
+        <h3 class="project-title">Sales Revenue Report</h3>
         <p class="project-description">
           This project analyzes Maven Toy Store sales data using both <b>Python</b> (Jupyter Notebook) and <b>Excel</b>. Explore sales trends, top products, and weekday vs. weekend performance with interactive dashboards in both tools.
         </p>
         <div class="project-features">
-          <h4>Features</h4>
+
           <ul>
             <li>Revenue trend visualization and dashboard</li>
             <li>Weekday vs. weekend sales comparison</li>
@@ -770,7 +804,7 @@ body.dark .project-thumbnail {
           </ul>
         </div>
         <div class="project-links">
-          <a href="https://www.linkedin.com/posts/tonekaboni_python-pandas-dashboard-activity-7365641837174284288-7AIb/" class="project-link linkedin" title="LinkedIn Post" target="_blank">
+          <a href="https://www.linkedin.com/posts/tonekaboni_excel-dataanalysis-dashboard-activity-7364607569014800385-viuc/" class="project-link linkedin" title="LinkedIn Post" target="_blank">
             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" alt="LinkedIn" style="width: 20px; height: 20px;">
           </a>
           <a href="https://github.com/atonekaboni/Toy_Store/" class="project-link github" title="GitHub Repository" target="_blank">
@@ -791,8 +825,42 @@ body.dark .project-thumbnail {
         </div>
       </div>
     </div>
+
+        <div class="project-card">
+      <div class="project-thumbnail">
+        <img src="https://jupyter.org/assets/try/jupyter.png" alt="Sales Revenue Report" style="width: 42%; margin: 30px auto 0 auto; height: auto; object-fit: contain; border-radius: 8px; cursor: pointer;" onclick="window.open('https://github.com/atonekaboni/Python_Challenge/', '_blank')">
+      </div>
+      <div class="project-content">
+        <br>
+        <h3 class="project-title">Python pandas challenge</h3>
+        <p class="project-description">
+          15 real-world business problems with <b>NumPy</b> and <b>pandas</b> across social media analytics, fraud detection, e-commerce,  loyalty programs, product launches, and more.
+        </p>
+        <div class="project-features">
+
+          <ul>
+            <li>Analytics: CTR, segmentation, forecasting</li>
+            <li>Data quality: fraud detection, outliers (IQR)</li>
+            <li>Transformations: pivot tables, time series</li>
+            <li>Data cleaning: missing values, normalization</li>
+          </ul>
+        </div>
+        <div class="project-links">
+          <a href="https://www.linkedin.com/posts/tonekaboni_github-atonekabonipythonchallenge-python-activity-7363473713289146372-r2NP/" class="project-link linkedin" title="LinkedIn Post" target="_blank">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" alt="LinkedIn" style="width: 20px; height: 20px;">
+          </a>
+          <a href="https://github.com/atonekaboni/Python_Challenge/" class="project-link github" title="GitHub Repository" target="_blank">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" style="width: 20px; height: 20px;">
+          </a>
+        </div>
+      </div>
+    </div>
+
+
   </div>
 </section>
+
+
 
 <script>
   const themeSwitch = document.getElementById('themeSwitch');
