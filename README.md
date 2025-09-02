@@ -5,4 +5,4 @@
 <br>
 
 ## Connect
-<img src="https://content.linkedin.com/content/dam/me/business/en-us/amp/brand-site/v2/bg/LI-Bug.svg.original.svg" width="2.5%"> [Linkedin](https://www.linkedin.com/in/tonekaboni/)
+<img src="https://content.linkedin.com/content/dam/me/business/en-us/amp/brand-site/v2/bg/LI-Bug.svg.original.svg" width="2.5%"> [Follow me on LinkedIn](https://www.linkedin.com/in/tonekaboni/)
