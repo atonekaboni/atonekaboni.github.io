@@ -1,0 +1,25 @@
+name: Update Website Preview
+on:
+  schedule:
+    - cron: '0 0 * * *'  # Daily at midnight
+  workflow_dispatch:  # Allows manual trigger
+
+jobs:
+  screenshot:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      
+      - name: Take Screenshot
+        uses: swinton/screenshot-website@v1.x
+        with:
+          source: https://atonekaboni.github.io
+          destination: website-preview.png
+          
+      - name: Commit Screenshot
+        run: |
+          git config --local user.email "atonekaboni@users.noreply.github.com"
+          git config --local user.name "GitHub Action"
+          git add website-preview.png
+          git commit -m "Update website preview [skip ci]" || exit 0
+          git push
