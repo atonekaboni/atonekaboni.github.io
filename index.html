@@ -603,7 +603,7 @@ body.dark .project-thumbnail {
 .project-link.excel:hover { background: #e8f5e8; border-color: #45b477; color: #217346; }
 .project-link.docs:hover { background: #e8f0fe; border-color: #1a73e8; color: #1a73e8; }
 .project-link.maven:hover { background: #e6e6e6; border-color: #636262; color: #797574; }
-.project-link.powerbi:hover { background: #fff3cd; border-color: #ffee00; color: #f8c182; }
+.project-link.powerbi:hover { background: #fff3cdce; border-color: #ffee004f; color: #f8c182; }
 </style>
 </head>
 <body>
@@ -685,7 +685,7 @@ body.dark .project-thumbnail {
       </div>
       <div class="card-body">
         <ul class="card-links">
-          <li><a href="https://github.com/atonekaboni/Toy_Store/" target="_blank">Sales Revenue Report</a></li>
+          <li><a href="https://github.com/atonekaboni/Toy_Store/" target="_blank">Sales Revenue Dashboard</a></li>
           <!-- <li><a href="https://www.linkedin.com/in/tonekaboni/details/certifications/" target="_blank">View Certifications</a></li> -->
           <li>
             <a href="https://www.linkedin.com/posts/tonekaboni_github-atonekabonipythonchallenge-python-activity-7363473713289146372-r2NP" target="_blank">
@@ -787,20 +787,21 @@ body.dark .project-thumbnail {
   <div class="projects-grid">
     <div class="project-card">
       <div class="project-thumbnail">
-        <img src="https://github.com/user-attachments/assets/75d77bec-8cde-43ab-9065-c4989ea02205" alt="Sales Revenue Report" style="width: 72%; margin: 60px auto 0 auto; height: auto; object-fit: contain; border-radius: 8px; cursor: pointer;" onclick="window.open('https://github.com/atonekaboni/Toy_Store/', '_blank')">
+        <img src="https://github.com/user-attachments/assets/bfcad46e-c479-4a74-afa5-1d96d875aea2" alt="Sales Revenue Dashboard" style="width: 92%; margin: 35px auto 0 auto; height: auto; object-fit: contain; border-radius: 8px; cursor: pointer;" onclick="window.open('https://github.com/atonekaboni/Toy_Store/', '_blank')">
       </div>
       <div class="project-content">
-        <br>
-        <h3 class="project-title">Sales Revenue Report</h3>
+        <h3 class="project-title">Sales Revenue Dashboard</h3>
         <p class="project-description">
-          This project analyzes Maven Toy Store sales data using both <b>Python</b> (Jupyter Notebook) and <b>Excel</b>. Explore sales trends, top products, and weekday vs. weekend performance with interactive dashboards in both tools.
+          This project analyzes Maven Toy Store sales data using <b>Power BI</b>, <b>Python</b>, and <b>Excel</b> with interactive dashboards and business insights.
         </p>
         <div class="project-features">
 
           <ul>
-            <li>Revenue trend visualization and dashboard</li>
+            <li>Sales revenue and profit trend analysis</li>
             <li>Weekday vs. weekend sales comparison</li>
-            <li>Top product analysis</li>
+            <li>Dynamic visualizations, KPI tracking</li>
+            <li>top-selling product insights</li>
+            <li>Store location and category performance analysis</li>
           </ul>
         </div>
         <div class="project-links">
@@ -810,8 +811,11 @@ body.dark .project-thumbnail {
           <a href="https://github.com/atonekaboni/Toy_Store/" class="project-link github" title="GitHub Repository" target="_blank">
             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" style="width: 20px; height: 20px;">
           </a>
-          <a href="https://onedrive.live.com/personal/bacea17d0cf2ed30/_layouts/15/doc2.aspx?sourcedoc=%7B95c9e14d-131e-4792-9751-7e1d807b6b66%7D&action=default&redeem=aHR0cHM6Ly8xZHJ2Lm1zL3gvYy9iYWNlYTE3ZDBjZjJlZDMwL0VVM2h5WlVlRTVKSGwxRi1IWUI3YTJZQlE2TWNSdHpPWmZwVzlxYzBRR1ExZlE_ZT1jeVpMUHI&slrid=8ab5bea1-205c-d000-ba4f-71222a0c558b&originalPath=aHR0cHM6Ly8xZHJ2Lm1zL3gvYy9iYWNlYTE3ZDBjZjJlZDMwL0VVM2h5WlVlRTVKSGwxRi1IWUI3YTJZQlE2TWNSdHpPWmZwVzlxYzBRR1ExZlE_cnRpbWU9T3ZzYk41bmkzVWc&CID=42d82fcb-3ccf-4d9b-a3ac-6e83406b7a4e&_SRM=0:G:51" class="project-link excel" title="Excel File" target="_blank">
-            <img src="https://img.icons8.com/color/48/microsoft-excel-2019.png" alt="Excel" style="width: 20px; height: 20px;">
+          <a href="https://github.com/atonekaboni/Toy_Store/blob/main/Python/Toy_Store_Publish.ipynb" class="project-link python notebook" title="Python Notebook" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/110px-Python-logo-notext.svg.png" alt="Python" style="width: 20px; height: 20px;">
+          </a>
+          <a href="https://github.com/atonekaboni/Toy_Store/blob/main/Power%20BI/Toy_Store_Report_Tonekaboni.pbix" class="project-link powerbi" title="Power BI Dashboard" target="_blank">
+            <img src="https://img.icons8.com/color/48/power-bi.png" alt="Power BI Toy Store pbix" style="width: 20px; height: 20px;">
           </a>
           <a href="https://docs.google.com/document/d/1NhvtaXnxcbc3xwRru4Stq_qN87IqSo_fHpozZlbh62Q/" class="project-link docs" title="Google Docs" target="_blank">
             <img src="https://img.icons8.com/color/48/google-docs.png" alt="Google Docs" style="width: 20px; height: 20px;">
@@ -819,19 +823,15 @@ body.dark .project-thumbnail {
           <a href="https://mavenshowcase.com/profile/9881d3c0-4031-7020-46f3-98e7d2f7790a" class="project-link maven" title="Maven Analytics Showcase" target="_blank">
             <img src="https://media.licdn.com/dms/image/v2/C4E0BAQGKWpCXrVLm3Q/company-logo_200_200/company-logo_200_200/0/1630580865071/maven_analytics_logo?e=1758758400&v=beta&t=_OvqoJoaV4YQCQqMRPT8WZBjcpBr80cOwAgmuPMSBPE" alt="Maven Analytics" style="width: 20px; height: 20px;">
           </a>
-          <!-- <a href="#" class="project-link powerbi" title="Power BI Dashboard">
-            <img src="https://img.icons8.com/color/48/power-bi.png" alt="Power BI" style="width: 20px; height: 20px;">
-          </a> -->
         </div>
       </div>
     </div>
 
         <div class="project-card">
       <div class="project-thumbnail">
-        <img src="https://jupyter.org/assets/try/jupyter.png" alt="Sales Revenue Report" style="width: 42%; margin: 30px auto 0 auto; height: auto; object-fit: contain; border-radius: 8px; cursor: pointer;" onclick="window.open('https://github.com/atonekaboni/Python_Challenge/', '_blank')">
+        <img src="https://github.com/user-attachments/assets/b680bb3d-cd8a-4592-8841-26c09fe72bed" alt="Python pandas challenge" style="width: 81%; margin: 35px auto 0 auto; height: auto; object-fit: contain; border-radius: 8px; cursor: pointer;" onclick="window.open('https://github.com/atonekaboni/Python_Challenge/', '_blank')">
       </div>
       <div class="project-content">
-        <br>
         <h3 class="project-title">Python pandas challenge</h3>
         <p class="project-description">
           15 real-world business problems with <b>NumPy</b> and <b>pandas</b> across social media analytics, fraud detection, e-commerce,  loyalty programs, product launches, and more.
@@ -851,6 +851,9 @@ body.dark .project-thumbnail {
           </a>
           <a href="https://github.com/atonekaboni/Python_Challenge/" class="project-link github" title="GitHub Repository" target="_blank">
             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" style="width: 20px; height: 20px;">
+          </a>
+          <a href="https://github.com/atonekaboni/Python_Challenge/tree/main/Notebooks" class="project-link python notebooks" title="Python Notebooks" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/110px-Python-logo-notext.svg.png" alt="Python" style="width: 20px; height: 20px;">
           </a>
         </div>
       </div>
