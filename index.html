@@ -248,9 +248,9 @@ body.dark .site-main-tagline { color: #a7beef; }
   gap: 8px;
 }
 .about-card .card-header { background: linear-gradient(135deg, #202838 0%, #475569 100%) !important;}
-.linkedin-card .card-header { background: linear-gradient(135deg, #0a66c2 0%, #004182 100%) !important;}
-.sap-card .card-header { background: linear-gradient(135deg, #0070f3 0%, #0051cc 100%) !important;}
-.training-card .card-header { background: linear-gradient(135deg, #059669 0%, #047857 100%) !important;}
+.linkedin-card .card-header { background: linear-gradient(135deg, #41729f 0%, #41729f 100%) !important;}
+.sap-card .card-header { background: linear-gradient(135deg, #274472 0%, #274472 100%) !important;}
+.training-card .card-header { background: linear-gradient(135deg, #05445e 0%, #05445e 100%) !important;}
 .card-title {
   font-family: 'Montserrat', sans-serif;
   font-size: 1.14em;
@@ -365,9 +365,9 @@ body.dark .site-main-tagline { color: #a7beef; }
   width: auto;
 }
 .about-card .card-links a:hover, .about-card .card-links a:focus { background: #ecf1f8; border-color: #35405e; color: #05203e;}
-.linkedin-card .card-links a:hover, .linkedin-card .card-links a:focus { background: #e8f0fb; border-color: #0a66c2; color: #0a66c2;}
-.sap-card .card-links a:hover, .sap-card .card-links a:focus { background: #e8f1fe; border-color: #0070f3; color: #0051cc;}
-.training-card .card-links a:hover, .training-card .card-links a:focus { background: #e6fbf3; border-color: #059669; color: #047857;}
+.linkedin-card .card-links a:hover, .linkedin-card .card-links a:focus { background: #eef6fd; border-color: #41729f; color: #41729f;}
+.sap-card .card-links a:hover, .sap-card .card-links a:focus { background: #e8f0fb; border-color: #274472; color: #274472;}
+.training-card .card-links a:hover, .training-card .card-links a:focus { background: #dfe8ec; border-color: #05445e; color: #05445e;}
 .main-link-btn {
   font-family: 'Montserrat', sans-serif;
   display: flex;
@@ -395,17 +395,17 @@ body.dark .site-main-tagline { color: #a7beef; }
   color: #e4eaf4;
 }
 .linkedin-card .main-link-btn {
-  background: linear-gradient(135deg, #0a66c2 0%, #004182 100%);
+  background: linear-gradient(135deg, #41729f 0%, #41729f 100%);
 }
-.linkedin-card .main-link-btn:hover { background: linear-gradient(135deg, #004182 0%, #002c5f 100%);}
+.linkedin-card .main-link-btn:hover { background: linear-gradient(135deg, #41729f 0%, #41729f 100%);}
 .sap-card .main-link-btn {
-  background: linear-gradient(135deg, #0070f3 0%, #0051cc 100%);
+  background: linear-gradient(135deg, #274472 0%, #274472 100%);
 }
-.sap-card .main-link-btn:hover { background: linear-gradient(135deg, #0051cc 0%, #003d99 100%);}
+.sap-card .main-link-btn:hover { background: linear-gradient(135deg, #5885af 0%, #5885af 100%);}
 .training-card .main-link-btn {
-  background: linear-gradient(135deg, #059669 0%, #047857 100%);
+  background: linear-gradient(135deg, #05445e 0%, #05445e 100%);
 }
-.training-card .main-link-btn:hover { background: linear-gradient(135deg, #047857 0%, #065f46 100%);}
+.training-card .main-link-btn:hover { background: linear-gradient(135deg, #05445e 0%, #05445e 100%);}
 
 .projects-section {
   width: 100%;
@@ -604,6 +604,26 @@ body.dark .project-thumbnail {
 .project-link.docs:hover { background: #e8f0fe; border-color: #1a73e8; color: #1a73e8; }
 .project-link.maven:hover { background: #e6e6e6; border-color: #636262; color: #797574; }
 .project-link.powerbi:hover { background: #fff3cdce; border-color: #ffee004f; color: #f8c182; }
+.small-card {
+  background: var(--card-bg);
+  border-radius: 20px;
+  box-shadow: var(--card-shadow);
+  border: 1px solid #eef2f6;
+  overflow: hidden;
+  transition: transform 0.15s, box-shadow 0.22s;
+  max-width: 400px;
+  width: 100%;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  font-size: 1.06em;
+  transition: box-shadow 0.22s, transform 0.15s, background 0.3s, color 0.3s;
+  min-width: 0;
+}
+.small-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+}
 </style>
 </head>
 <body>
@@ -685,15 +705,12 @@ body.dark .project-thumbnail {
       </div>
       <div class="card-body">
         <ul class="card-links">
-          <li><a href="https://github.com/atonekaboni/Toy_Store/" target="_blank">Sales Revenue Dashboard</a></li>
+          <li><a href="#projects-section" onclick="document.getElementById('projects-section').scrollIntoView({behavior: 'smooth'}); return false;" target="_blank">HR Analytics Dashboard</a></li>
+          <li><a href="#projects-section" onclick="document.getElementById('projects-section').scrollIntoView({behavior: 'smooth'}); return false;" target="_blank">Sales Revenue Dashboard</a></li>
+          <li><a href="#projects-section" onclick="document.getElementById('projects-section').scrollIntoView({behavior: 'smooth'}); return false;" target="_blank">Python Pandas Data Challenge</a></li>
           <!-- <li><a href="https://www.linkedin.com/in/tonekaboni/details/certifications/" target="_blank">View Certifications</a></li> -->
-          <li>
-            <a href="https://www.linkedin.com/posts/tonekaboni_github-atonekabonipythonchallenge-python-activity-7363473713289146372-r2NP" target="_blank">
-              Python Pandas Challenge <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/110px-Python-logo-notext.svg.png" alt="Python" style="width: 16px; height: 16px; vertical-align: middle;">
-            </a>
-          </li>	
         </ul>
-        <a class="main-link-btn" href="https://www.linkedin.com/in/tonekaboni" target="_blank">Showcase</a>
+        <a class="main-link-btn" href="https://mavenshowcase.com/profile/9881d3c0-4031-7020-46f3-98e7d2f7790a" target="_blank">Maven Analytics Showcase</a>
       </div>
     </div>
     <!-- SAP Business One Card -->
@@ -701,35 +718,34 @@ body.dark .project-thumbnail {
       <div class="card-header">
         <div>
           <div class="card-title">SAP Business One</div>
-          <div class="card-subtitle">Guides, Examples and Resources</div>
+          <div class="card-subtitle">ERP Guides, Examples and Resources</div>
         </div>
       </div>
       <div class="card-body">
         <ul class="card-links">
+          <li>
+            <a href="https://www.linkedin.com/posts/tonekaboni_sap-business-one-custom-sales-blocklist-activity-7355487934503882753-VPCk?utm_source=share&utm_medium=member_desktop" target="_blank">
+              Custom Sales Blocklist System
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/posts/tonekaboni_sap-business-one-recent-sales-items-activity-7332673836133281795-L2_k?utm_source=share" target="_blank">
+              Formatted Search (FMS) Solution
+            </a>
+          </li>
           <li>
             <a href="https://www.linkedin.com/posts/tonekaboni_sap-business-one-available-to-promise-atp-activity-7330141250928508928-e81i/?utm_source=share" target="_blank">
               Advanced Available-to-Promise (ATP)
             </a>
           </li>
           <li>
-            <a href="https://www.linkedin.com/posts/tonekaboni_sap-business-one-recent-sales-items-activity-7332673836133281795-L2_k?utm_source=share" target="_blank">
-              Formatted Search (FMS)
-            </a>
-          </li>
-          <li>
-            <a href="https://www.linkedin.com/pulse/supercharge-your-view-connected-business-partners-tonekaboni-wayse" target="_blank">
-              Connected Business Partners
-            </a>
-          </li>
-          <li>
             <a href="https://www.linkedin.com/posts/tonekaboni_automating-sap-business-one-with-n8n-activity-7338469577615421440-7kD7?utm_source=share&utm_medium=member_desktop" target="_blank">
-              Revolutionizing Sales with SAP B1, n8n, and AI
+              AI-Powered Sales Automation with n8n
             </a>
           </li>
-          <li>
-            <a href="https://www.linkedin.com/posts/tonekaboni_sap-business-one-custom-sales-blocklist-activity-7355487934503882753-VPCk?utm_source=share&utm_medium=member_desktop" target="_blank">
-              Building a Custom Sales Blocklist
-            </a>
+
+          <li><a href="https://www.linkedin.com/pulse/supercharge-your-view-connected-business-partners-tonekaboni-wayse" target="_blank">Connected Business Partners Management</a></li>
+          <li><a href="https://www.linkedin.com/posts/tonekaboni_leveraging-pcf-framework-for-successful-erp-activity-7350879466652418048-3j1-/?utm_source=share" target="_blank">APQC PCF framework for ERP Implementation</a>
           </li>
         </ul>
         <a class="main-link-btn" href="https://github.com/atonekaboni/SBO/" target="_blank">SAP GitHub Repository</a>
@@ -739,35 +755,22 @@ body.dark .project-thumbnail {
     <div class="card training-card">
       <div class="card-header">
         <div>
-          <div class="card-title">Learning and Resources</div>
-          <div class="card-subtitle">Reference and Tutorials</div>
+          <div class="card-title">Mini Projects</div>
+          <div class="card-subtitle">Learning and Tutorials</div>
         </div>
       </div>
       <div class="card-body">
         <ul class="card-links">
-          <li>
-            <a href="https://www.linkedin.com/posts/tonekaboni_leveraging-pcf-framework-for-successful-erp-activity-7350879466652418048-3j1-/?utm_source=share" target="_blank">
-              APQC PCF framework for ERP Implementation
-            </a>
-          </li>
-          <li>
-            <a href="https://www.linkedin.com/posts/tonekaboni_month-over-month-calculations-activity-7353005724702015490-_AOW/" target="_blank">
-              Month-over-Month Calculations
-            </a>
-          </li>
+          <li><a href="https://github.com/atonekaboni/date-range-matching" target="_blank">Date Range Matching</a></li>
+          <li><a href="https://github.com/atonekaboni/Month-Over-Month" target="_blank">Month-over-Month Calculations</a></li>
           <li>
             <a href="https://www.linkedin.com/posts/tonekaboni_datascience-python-eda-activity-7356283479581483009-yizk?utm_source=share&utm_medium=member_desktop" target="_blank">
               Data Science in Python: Data Prep and EDA
             </a>
           </li>
-          <li>
-            <a href="https://www.linkedin.com/posts/tonekaboni_python-pandas-cheat-sheet-activity-7359636721497452546-bJ6K?utm_source=share&utm_medium=member_desktop" target="_blank">
-              Python Pandas Cheat Sheet
-            </a>
-          </li>	
-          <!-- <li><a href="https://www.linkedin.com/in/tonekaboni/recent-activity/all/" target="_blank">Posts and Articles</a></li> -->
+          <!-- <li><a href="https://www.linkedin.com/posts/tonekaboni_python-pandas-cheat-sheet-activity-7359636721497452546-bJ6K?utm_source=share&utm_medium=member_desktop" target="_blank">Python Pandas Cheat Sheet</a></li> -->	
         </ul>
-        <a class="main-link-btn" href="https://www.linkedin.com/in/tonekaboni/recent-activity/all/" target="_blank">Posts and Articles</a>
+        <a class="main-link-btn" href="https://atonekaboni.medium.com/" target="_blank">Blog Posts</a>
       </div>
     </div>
   </div>
@@ -895,6 +898,31 @@ body.dark .project-thumbnail {
       </div>
     </div>
 
+    <div class="small-cards-container">
+      <div class="small-card" onclick="window.open('https://github.com/atonekaboni/date-range-matching', '_blank')" style="cursor: pointer;">
+        <div class="project-content" style="padding: 20px 18px;">
+          <h3 class="project-title" style="margin: 0 0 12px 0; font-size: 1.1em; display: flex; align-items: center; gap: 8px;">
+            Date Range Matching 
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" style="width: 16px; height: 16px; opacity: 0.7;">
+          </h3>
+          <p class="project-description" style="font-size: 0.9em; margin-bottom: 0; line-height: 1.5;">
+            Matched sales orders to active promotional periods based on date ranges.
+          </p>
+        </div>
+      </div>
+<br>
+      <div class="small-card" onclick="window.open('https://github.com/atonekaboni/Month-Over-Month', '_blank')" style="cursor: pointer;">
+        <div class="project-content" style="padding: 20px 18px;">
+          <h3 class="project-title" style="margin: 0 0 12px 0; font-size: 1.1em; display: flex; align-items: center; gap: 8px;">
+            Month-over-Month Calculations 
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" style="width: 16px; height: 16px; opacity: 0.7;">
+          </h3>
+          <p class="project-description" style="font-size: 0.9em; margin-bottom: 0; line-height: 1.5;">
+            Calculated the month-over-month change in coffee shop sales data.
+          </p>
+        </div>
+      </div>
+    </div>
 
   </div>
 </section>
