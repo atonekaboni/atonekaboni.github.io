@@ -4,7 +4,7 @@
 
 <p align="center">
   <a href="https://atonekaboni.github.io" target="_blank">
-    <img width="1853" height="762" alt="Amirhossein Tonekaboni" src="https://github.com/user-attachments/assets/d931dd5a-9f97-49d8-9464-1d6f5fbca421" />
+    <img width="1832" height="757" alt="Amirhossein Tonekaboni" src="https://github.com/user-attachments/assets/2758a656-fcb3-4564-be8b-93a31c067930" />
   </a>
 </p>
 
