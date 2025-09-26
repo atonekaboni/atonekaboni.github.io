@@ -2,13 +2,13 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Tonekaboni - Resume and Portfolio</title>
+<title>Amir Tonekaboni - Resume and Portfolio</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="Amirhossein Tonekaboni - SAP Business One Consultant and ERP Data Analyst. Resume, GitHub, LinkedIn, direct contact for professional opportunities.">
-<meta name="keywords" content="SAP, SAP Business One, ERP Consultant, Data Analyst, Amirhossein Tonekaboni, Resume, LinkedIn, GitHub, Portfolio, SQL, Power BI, Python, Excel, Analytics, SCM, Business Analysis, ERP, Manufacturing">
+<meta name="keywords" content="SAP, SAP Business One, ERP Consultant, Data Analyst, Amirhossein Tonekaboni, Resume, LinkedIn, GitHub, Portfolio, SQL, Power BI, Python, Excel, MySQL, Analytics, SCM, Business Analysis, ERP, Manufacturing">
 <link rel="canonical" href="https://atonekaboni.github.io/"/>
-<meta property="og:title" content="Amirhossein Tonekaboni - SAP Business One Consultant and ERP Data Analyst"/>
-<meta property="og:description" content="Resume, GitHub, LinkedIn, and direct contact links for Amirhossein Tonekaboni, an ERP and Data professional."/>
+<meta property="og:title" content="Amirhossein Tonekaboni - SAP Business One Consultant - ERP Data Analyst"/>
+<meta property="og:description" content="Portfolio, Resume, GitHub, LinkedIn, Contact - Amirhossein Tonekaboni - SAP Business One Consultant - ERP Data Analyst"/>
 <meta property="og:type" content="website"/>
 <meta property="og:url" content="https://atonekaboni.github.io/"/>
 <meta property="og:image" content="https://raw.githubusercontent.com/atonekaboni/atonekaboni.github.io/refs/heads/main/assets/profile.jpg" />
@@ -19,7 +19,7 @@
   "@context": "http://schema.org",
   "@type": "Person",
   "name": "Amirhossein Tonekaboni",
-  "jobTitle": "SAP Business One Consultant and ERP Data Analyst",
+  "jobTitle": "SAP Business One Consultant - ERP Data Analyst",
   "url": "https://atonekaboni.github.io/",
   "image": "https://raw.githubusercontent.com/atonekaboni/atonekaboni.github.io/refs/heads/main/assets/profile.jpg",
   "sameAs": [
@@ -618,7 +618,7 @@ body.dark .project-thumbnail {
   transition: transform 0.15s, box-shadow 0.22s;
   max-width: 400px;
   width: 100%;
-  height: 150px;
+  height: 125px;
   display: flex;
   flex-direction: column;
   font-size: 1.06em;
@@ -626,6 +626,29 @@ body.dark .project-thumbnail {
   min-width: 0;
 }
 .small-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+}
+
+
+.medium-card {
+  background: var(--card-bg);
+  border-radius: 20px;
+  box-shadow: var(--card-shadow);
+  border: 1px solid #eef2f6;
+  overflow: hidden;
+  transition: transform 0.15s, box-shadow 0.22s;
+  max-width: 400px;
+  width: 100%;
+  height: 280px;
+  display: flex;
+  flex-direction: column;
+  font-size: 1.06em;
+  transition: box-shadow 0.22s, transform 0.15s, background 0.3s, color 0.3s;
+  min-width: 0;
+}
+
+.medium-card:hover {
   transform: translateY(-2px);
   box-shadow: 0 8px 25px rgba(0,0,0,0.12);
 }
@@ -657,6 +680,7 @@ body.dark .project-thumbnail {
         </div>
       </div>
       <div class="card-body">
+        <div style="height: 10px; margin-top: -5px;"></div>
         <div class="about-header-row">
           <div class="about-img">
             <img src="https://raw.githubusercontent.com/atonekaboni/atonekaboni.github.io/refs/heads/main/assets/profile.jpg" alt="Amirhossein Tonekaboni">
@@ -674,6 +698,7 @@ body.dark .project-thumbnail {
         <div class="about-text-justify">
           ERP Consultant transitioning to <b>Data Analyst</b> with 5+ years in Enterprise Resource Planning implementations, including <b>SAP Business One</b>, focused on supply chain and manufacturing systems. Proficient in <b>Microsoft SQL</b>, <b>Excel</b>, <b>Power BI</b>, and <b>Python</b> for data analysis and process improvement, with experience in user training and cross-functional collaboration.
         </div>
+        <div style="height: 12px;"></div>
         <br><div class="project-links">
           <a href="https://www.linkedin.com/in/tonekaboni" class="project-link linkedin" title="LinkedIn" target="_blank">
             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" alt="LinkedIn" style="width: 20px; height: 20px;">
@@ -710,7 +735,7 @@ body.dark .project-thumbnail {
         <ul class="card-links">
           
 <!-- Data Analysis & Database -->
-        <h4 style="margin-bottom: 6px; margin-top: 0;">Data Analysis & Database</h4>
+        <h4 style="margin-bottom: 6px; margin-top: -5px;">Data Analysis & Database</h4>
         <div style="line-height: 1.5; margin-top: 0;">
   <img src="https://upload.wikimedia.org/wikipedia/commons/c/cf/New_Power_BI_Logo.svg" alt="Power BI" style="width: 20px; height: 20px; margin-right: 5px; margin-left: 10px;">
   <b>Power BI:</b> DAX, Data Modeling
@@ -752,20 +777,21 @@ body.dark .project-thumbnail {
       </div>
       <div class="card-body">
         <ul class="card-links">
-<h4 style="margin-bottom: 8px; margin-top: 0px;">Data Projects</h4>
+<h4 style="margin-bottom: 8px; margin-top: -5px;">Data Projects</h4>
           <div style="line-height: 1.8; margin-top: 0;">
-          <li><a href="#projects-section" onclick="document.getElementById('projects-section').scrollIntoView({behavior: 'smooth'}); return false;" target="_blank">• HR Analytics Dashboard<br>• Sales Revenue Dashboard<br>• Python Pandas Data Challenge<br>• Analyzing Police Activity (Pandas) 🚧</a></li>
+          <li><a href="#projects-section" onclick="document.getElementById('projects-section').scrollIntoView({behavior: 'smooth'}); return false;" target="_blank">
+            • Healthcare Data Analytics <br>• Sales Revenue Intelligence<br>• Employee Retention Dashboard</a></li>
 
-          <h4 style="margin-bottom: 8px; margin-top: 20px;">Mini Projects</h4>
+          <h4 style="margin-bottom: 8px; margin-top: 20px;">Coding Challenges</h4>
           <div style="line-height: 1.8; margin-top: 0;">
-          <li><a href="#projects-section" onclick="document.getElementById('projects-section').scrollIntoView({behavior: 'smooth'}); return false;" target="_blank">• Date Range Matching<br>• Month-Over-Month Calculations</a></li>
+          <li><a href="#projects-section" onclick="document.getElementById('projects-section').scrollIntoView({behavior: 'smooth'}); return false;" target="_blank">• Date Range Matching<br>• Python Pandas Data Challenge<br>• Month-Over-Month Calculations</a></li>
           <!-- <li><a href="https://github.com/atonekaboni/date-range-matching" target="_blank">• Date Range Matching<br><br>• Month-Over-Month Calculations</a></li> -->
           <!-- <li><a href="https://github.com/atonekaboni/Month-Over-Month" target="_blank">Month-Over-Month Calculations</a></li> -->
         </ul>
         <a class="main-link-btn" href="https://mavenshowcase.com/profile/9881d3c0-4031-7020-46f3-98e7d2f7790a" target="_blank">Maven Analytics Showcase</a>
       </div>
     </div>
-    <!-- SAP Business One Card (change to linkedin-card class for lighter blue colors) -->
+    
     <div class="card linkedin-card">
       <div class="card-header">
         <div>
@@ -774,6 +800,7 @@ body.dark .project-thumbnail {
       </div>
       <div class="card-body">
         <ul class="card-links">
+          <h4 style="margin-bottom: 6px; margin-top: -5px;">Enterprise Resource Planning</h4>
           <li>
             <a href="https://www.linkedin.com/posts/tonekaboni_sap-business-one-custom-sales-blocklist-activity-7355487934503882753-VPCk?utm_source=share&utm_medium=member_desktop" target="_blank">
               Custom Sales Blocklist System
@@ -821,17 +848,16 @@ body.dark .project-thumbnail {
         <img src="https://github.com/user-attachments/assets/bfcad46e-c479-4a74-afa5-1d96d875aea2" alt="Sales Revenue Dashboard" style="width: 92%; margin: 35px auto 0 auto; height: auto; object-fit: contain; border-radius: 8px; cursor: pointer;" onclick="window.open('https://github.com/atonekaboni/Toy_Store/', '_blank')">
       </div>
       <div class="project-content">
-        <h3 class="project-title">Sales Revenue Dashboard</h3>
+        <h3 class="project-title">Sales Revenue Intelligence</h3>
         <p class="project-description">
-          This project analyzes Maven Toy Store sales data using <b>Power BI</b>, <b>Python</b>, and <b>Excel</b> with interactive dashboards and business insights.
+          Cross-platform analysis of Toy Store sales data using <b>Power BI</b>, <b>Python</b>, and <b>Excel</b> with interactive dashboards and business insights.
         </p>
         <div class="project-features">
 
           <ul>
             <li>Sales revenue and profit trend analysis</li>
             <li>Weekday vs. weekend sales comparison</li>
-            <li>Dynamic visualizations, KPI tracking</li>
-            <li>top-selling product insights</li>
+            <li>KPI tracking and top-selling product insights</li>
             <li>Store location and category performance analysis</li>
           </ul>
         </div>
@@ -851,8 +877,8 @@ body.dark .project-thumbnail {
           <a href="https://docs.google.com/document/d/1NhvtaXnxcbc3xwRru4Stq_qN87IqSo_fHpozZlbh62Q/" class="project-link docs" title="Google Docs" target="_blank">
             <img src="https://img.icons8.com/color/48/google-docs.png" alt="Google Docs" style="width: 20px; height: 20px;">
           </a>
-          <a href="https://mavenshowcase.com/profile/9881d3c0-4031-7020-46f3-98e7d2f7790a" class="project-link maven" title="Maven Analytics Showcase" target="_blank">
-            <img src="https://media.licdn.com/dms/image/v2/C4E0BAQGKWpCXrVLm3Q/company-logo_200_200/company-logo_200_200/0/1630580865071/maven_analytics_logo?e=1758758400&v=beta&t=_OvqoJoaV4YQCQqMRPT8WZBjcpBr80cOwAgmuPMSBPE" alt="Maven Analytics" style="width: 20px; height: 20px;">
+          <!-- <a href="https://mavenshowcase.com/profile/9881d3c0-4031-7020-46f3-98e7d2f7790a" class="project-link maven" title="Maven Analytics Showcase" target="_blank">
+            <img src="https://media.licdn.com/dms/image/v2/C4E0BAQGKWpCXrVLm3Q/company-logo_200_200/company-logo_200_200/0/1630580865071/maven_analytics_logo?e=1758758400&v=beta&t=_OvqoJoaV4YQCQqMRPT8WZBjcpBr80cOwAgmuPMSBPE" alt="Maven Analytics" style="width: 20px; height: 20px;"> -->
           </a>
         </div>
       </div>
@@ -863,7 +889,7 @@ body.dark .project-thumbnail {
         <img src="https://github.com/user-attachments/assets/84a9d90e-8a12-4e89-addb-1e512668d6a9" alt="HR Analytics Dashboard" style="width: 92%; margin: 35px auto 0 auto; height: auto; object-fit: contain; border-radius: 8px; cursor: pointer;" onclick="window.open('https://github.com/atonekaboni/HR/', '_blank')">
       </div>
       <div class="project-content">
-        <h3 class="project-title">HR Analytics Dashboard</h3>
+        <h3 class="project-title">Employee Retention Dashboard</h3>
         <p class="project-description">
           This project analyzes HR employee attrition data using <b>Power BI</b> with comprehensive dashboards and workforce insights.
         </p>
@@ -872,8 +898,7 @@ body.dark .project-thumbnail {
           <ul>
               <li>Employee attrition rate and demographic analysis</li>
               <li>Department vs. job role attrition comparison</li>
-              <li>Interactive visualizations and HR KPI tracking</li>
-              <li>High-risk employee segment identification</li>
+              <li>HR KPIs and high-risk employee identification</li>
               <li>Job satisfaction scoring and retention analysis</li>
           </ul>
         </div>
@@ -896,12 +921,70 @@ body.dark .project-thumbnail {
 
         <div class="project-card">
       <div class="project-thumbnail">
-        <img src="https://github.com/user-attachments/assets/b680bb3d-cd8a-4592-8841-26c09fe72bed" alt="Python pandas challenge" style="width: 81%; margin: 35px auto 0 auto; height: auto; object-fit: contain; border-radius: 8px; cursor: pointer;" onclick="window.open('https://github.com/atonekaboni/Python_Challenge/', '_blank')">
+        <img src="https://github.com/user-attachments/assets/dfbf8a77-f9ff-4be4-89e2-ef485c4fb991" alt="Healthcare Data Analytics" style="width: 81%; margin: 35px auto 0 auto; height: auto; object-fit: contain; border-radius: 8px; cursor: pointer;" onclick="window.open('https://github.com/atonekaboni/healthcare-analytics/', '_blank')">
       </div>
       <div class="project-content">
-        <h3 class="project-title">Python pandas challenge</h3>
+        <h3 class="project-title">Healthcare Data Analytics</h3>
         <p class="project-description">
-          15 real-world business problems with <b>NumPy</b> and <b>pandas</b> across social media analytics, fraud detection, e-commerce,  loyalty programs, product launches, and more.
+          <b>SQL</b>-based investigation of healthcare operations and revenue patterns for data-driven strategic decision-making and annual reporting.
+        </p>
+        <div class="project-features">
+
+          <ul>
+            <li>49% of encounters have NO insurance coverage</li>
+            <li>264% payer reimbursement gap</li>
+            <li>771 patients with 30-day readmission patterns</li>
+            <li>164% patient volume growth over the decade</li>
+          </ul>
+        </div>
+        <div class="project-links">
+          <a href="https://www.linkedin.com/in/tonekaboni/" class="project-link linkedin" title="LinkedIn Post" target="_blank">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" alt="LinkedIn" style="width: 20px; height: 20px;">
+          </a>
+          <a href="https://github.com/atonekaboni/healthcare-analytics" class="project-link github" title="GitHub Repository" target="_blank">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" style="width: 20px; height: 20px;">
+          </a>
+          <a href="https://github.com/atonekaboni/healthcare-analytics/blob/main/hospital_analytics.sql" class="project-link python notebooks" title="SQL script" target="_blank">
+            <img src="https://cdn4.iconfinder.com/data/icons/flat-pro-database-set-3/32/document-sql-512.png" alt="SQL" style="width: 20px; height: 20px;">
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="small-cards-container">
+      <div class="small-card" onclick="window.open('https://github.com/atonekaboni/date-range-matching', '_blank')" style="cursor: pointer;">
+        <div class="project-content" style="padding: 20px 18px;">
+          <h3 class="project-title" style="margin: 0 0 0px 0; font-size: 1.1em; display: flex; align-items: center; gap: 8px;">
+            Date Range Matching 
+          </h3>
+          <p class="project-description" style="font-size: 0.9em; margin-bottom: 0; line-height: 1.5;">
+            Matched sales orders to active promotional periods based on date ranges [4-Tool Analysis]
+            <img src="https://www.svgrepo.com/show/510970/external-link.svg" alt="GitHub" style="width: 16px; opacity: 0.7;">
+          </p>
+        </div>
+      </div>
+<br>     
+    <div class="small-cards-container"></div>
+      <div class="small-card" onclick="window.open('https://github.com/atonekaboni/Month-Over-Month', '_blank')" style="cursor: pointer;">
+        <div class="project-content" style="padding: 20px 18px;">
+          <h3 class="project-title" style="margin: 0 0 0px 0; font-size: 1.1em; display: flex; align-items: center; gap: 8px;">
+            Month-over-Month Calculations 
+          </h3>
+          <p class="project-description" style="font-size: 0.9em; margin-bottom: 0; line-height: 1.5;">
+            Calculated the month-over-month change in coffee shop sales data [4-Tool Analysis]
+            <img src="https://www.svgrepo.com/show/510970/external-link.svg" alt="GitHub" style="width: 16px; opacity: 0.7;">
+          </p>
+        </div>
+      </div>
+<br>
+    <div class="medium-card-container"></div>
+      <div class="medium-card">
+        <div class="project-content" style="padding: 20px 18px;">
+          <h3 class="project-title" style="margin: 0 0 0px 0; font-size: 1.1em; display: flex; align-items: center; gap: 8px;">
+            Python pandas challenge 
+          </h3>
+        <p class="project-description">
+          15 real-world business problems with <b>NumPy</b> and <b>pandas</b> across different industries.
         </p>
         <div class="project-features">
 
@@ -912,7 +995,7 @@ body.dark .project-thumbnail {
             <li>Data cleaning: missing values, normalization</li>
           </ul>
         </div>
-        <div class="project-links">
+        <div class="project-links" style="padding-bottom: 10px;">
           <a href="https://www.linkedin.com/posts/tonekaboni_github-atonekabonipythonchallenge-python-activity-7363473713289146372-r2NP/" class="project-link linkedin" title="LinkedIn Post" target="_blank">
             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" alt="LinkedIn" style="width: 20px; height: 20px;">
           </a>
@@ -924,33 +1007,6 @@ body.dark .project-thumbnail {
           </a>
         </div>
       </div>
-    </div>
-
-    <div class="small-cards-container">
-      <div class="small-card" onclick="window.open('https://github.com/atonekaboni/date-range-matching', '_blank')" style="cursor: pointer;">
-        <div class="project-content" style="padding: 20px 18px;">
-          <h3 class="project-title" style="margin: 0 0 12px 0; font-size: 1.1em; display: flex; align-items: center; gap: 8px;">
-            Date Range Matching 
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" style="width: 16px; height: 16px; opacity: 0.7;">
-          </h3>
-          <p class="project-description" style="font-size: 0.9em; margin-bottom: 0; line-height: 1.5;">
-            Matched sales orders to active promotional periods based on date ranges.
-          </p>
-        </div>
-      </div>
-<br>
-      <div class="small-card" onclick="window.open('https://github.com/atonekaboni/Month-Over-Month', '_blank')" style="cursor: pointer;">
-        <div class="project-content" style="padding: 20px 18px;">
-          <h3 class="project-title" style="margin: 0 0 12px 0; font-size: 1.1em; display: flex; align-items: center; gap: 8px;">
-            Month-over-Month Calculations 
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" style="width: 16px; height: 16px; opacity: 0.7;">
-          </h3>
-          <p class="project-description" style="font-size: 0.9em; margin-bottom: 0; line-height: 1.5;">
-            Calculated the month-over-month change in coffee shop sales data.
-          </p>
-        </div>
-      </div>
-    </div>
 
   </div>
 </section>
